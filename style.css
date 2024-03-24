@@ -115,6 +115,7 @@ main section:nth-of-type(2) img:nth-of-type(2){
 
 footer{
     width: 100vw;
+    margin-bottom: 24px;
 }
 
 footer h3 {

@@ -1,6 +1,6 @@
 /* ================== CSS VARIABLES ========================== */
 
-:root{
+:root {
     --backgroundColor: rgba(254, 251, 251, 1);
     --titleColor: rgba(242, 111, 82, 1);
     --main-font:'Nunito Sans', sans-serif;
@@ -22,7 +22,7 @@
 
 /* ==================== ALL & BODY =========================== */
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -33,7 +33,7 @@
     color: black;
 }
 
-body{
+body {
     background-color: var(--backgroundColor);
 }
 
@@ -44,56 +44,32 @@ body{
 header {
     text-align: center;
     margin: 24px 16px;
-
-    @media screen and (min-width: 1024px) {
-        background-image: url(./images/panoramic-shot-bicycle-wheels-riding.webp);
-        background-size: cover;
-        background-position: center;
-        width: 100vw;
-        margin: 0;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-
-
-        img{
-            display: none;
-        }
-    }
 }
 
-header h1{
+header h1 {
     margin: 32px 0 24px;
     color: var(--titleColor);
-
-    @media screen and (min-width: 1024px){
-        margin: 0;
-    }
 }
 
-header section:nth-of-type(1) img{
+header section:nth-of-type(1) img {
     width: 100%;
     border-radius: 16px;
     margin-bottom: 32px;
     box-shadow: var(--boxShadow);
 }
 
-header p{
+header p {
     margin: 16px 0;
     padding: 0 48px;
-
-    @media screen and (min-width: 1024px) {
-        padding: 0 32px;
-    }
 }
 
-header section{
+header section {
     text-align: center;
     margin: 24px 16px;
 }
 
 
-header section img{
+header section img {
     width: 15%;
     border-radius: 4px;
     box-shadow: none;
@@ -105,18 +81,42 @@ article {
     border-radius: 12px;
     padding: 8px 12px;
     margin: 16px 0;
+}
 
-    @media screen and (min-width: 1024px) {
+/* ======== MEDIA QUERIES HEADER DESKTOP ========= */
+
+@media screen and (min-width: 1024px) {
+    header {
+            background-image: url(./images/panoramic-shot-bicycle-wheels-riding.webp);
+            background-size: cover;
+            background-position: center;
+            width: 100vw;
+            margin: 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+    }
+
+    header img {
+        display: none;
+    }
+
+    header h1 {
+        margin: 0;
+    }
+
+    header p {
+        padding: 0 32px;
+    }
+
+    article {
         width: 70%;
         margin: 16px auto;
         background-color: var(--titleColor);
         color: whitesmoke;
     }
-}
 
-header section article p, header section article h3{
-
-    @media screen and (min-width: 1024px) {
+    header section article p, header section article h3 {
         color: whitesmoke;
     }
 }
@@ -125,8 +125,36 @@ header section article p, header section article h3{
 
 /* ======================= MAIN ============================== */
 
-main{
-    @media screen and (min-width: 1024px) {
+main section {
+    text-align: center;
+    margin: 24px 16px;
+}
+
+main section:nth-of-type(2) p:nth-of-type(1) {
+    margin-top: 24px;
+}
+
+main section p {
+    margin: 16px 8px;
+    text-align: start;
+}
+
+main section img:nth-of-type(1) {
+    width: 18%;
+    margin: 24px 0 0;
+}
+
+main section img:nth-of-type(2) {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: var(--boxShadow);
+    margin: 24px 0;
+}
+
+/* ======== MEDIA QUERIES MAIN DESKTOP ========= */
+
+@media screen and (min-width: 1024px){
+    main {
         background-color: var(--backgroundText);
         box-shadow: var(--boxShadow);
         border-radius: 12px;
@@ -135,63 +163,34 @@ main{
         margin: 24px auto;
         padding: 0 50px;
     }
-}
 
-main section{
-    text-align: center;
-    margin: 24px 16px;
-
-    @media screen and (min-width: 1024px) {
+    main section {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         margin: 32px auto;
-        padding: 0 50px;
+        padding: 0 32px;
+        width: 50%;
     }
-}
 
-main section:nth-of-type(1) p:nth-of-type(1){
-
-    @media screen and (min-width: 1024px) {
+    main section:nth-of-type(1) p:nth-of-type(1) {
         margin-top: 0;
     }
-}
 
-
-main section:nth-of-type(2) p:nth-of-type(1){
-    margin-top: 24px;
-
-    @media screen and (min-width: 1024px) {
+    main section:nth-of-type(2) p:nth-of-type(1) {
         margin-top: 0;
     }
-}
 
-main section p{
-    margin: 16px 8px;
-    text-align: start;
-
-    @media screen and (min-width: 1024px) {
+    main section p {
         margin: 16px 8px;
         text-align: start;
     }
-}
 
-main section img:nth-of-type(1){
-    width: 18%;
-    margin: 24px 0 0;
-
-    @media screen and (min-width: 1024px) {
+    main section img:nth-of-type(1) {
         display: none;
     }
-}
 
-main section img:nth-of-type(2){
-    width: 100%;
-    border-radius: 4px;
-    box-shadow: var(--boxShadow);
-    margin: 24px 0;
-
-    @media screen and (min-width: 1024px) {
+    main section img:nth-of-type(2) {
         display: none;
     }
 }
@@ -200,46 +199,55 @@ main section img:nth-of-type(2){
 
 /* ======================= FOOTER ============================== */
 
-footer{
+footer {
     width: 100vw;
     margin-bottom: 24px;
-
-    @media screen and (min-width: 1024px) {
-        margin-bottom: 0;
-    }
 }
 
 footer h3 {
     text-align: center;
 }
 
-footer section{
+footer section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-    @media screen and (min-width: 1024px) {
-        flex-direction: row;
-        justify-content: space-around;
-    }
 }
 
-footer img{
+footer img {
     width: 90vw;
     border-radius: 4px;
     box-shadow: var(--boxShadow);
     margin: 12px 0;
+}
 
-    @media screen and (min-width: 1024px) {
+/* ======== MEDIA QUERIES FOOTER DESKTOP ========= */
+
+@media screen and (min-width: 1024px) {
+    footer {
+        margin-bottom: 0;
+        width: 100vw;
+    }
+
+    footer section {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    footer img {
         width: 13vw;
         margin: 12px 6px;
         cursor: pointer;
         transition: all 1.1s ease-in-out;
+    }
+    
+    footer img:hover {
+        transform: scale(1.1);
+    }
 
-        &:hover {
-            transform: scale(1.1);
-        }
+    .first-logo {
+        width: 100px;
     }
 }
 

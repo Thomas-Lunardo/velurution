@@ -227,6 +227,7 @@ footer img{
 @media screen and (min-width: 1024px) {
     footer{
         margin-bottom: 0;
+        width: 100vw;
     }
 
     footer section{
@@ -239,10 +240,10 @@ footer img{
         margin: 12px 6px;
         cursor: pointer;
         transition: all 1.1s ease-in-out;
+    }
     
-        &:hover {
+    footer img:hover {
             transform: scale(1.1);
-        }
     }
 }
 

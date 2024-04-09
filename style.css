@@ -44,31 +44,11 @@ body{
 header {
     text-align: center;
     margin: 24px 16px;
-
-    @media screen and (min-width: 1024px) {
-        background-image: url(./images/panoramic-shot-bicycle-wheels-riding.webp);
-        background-size: cover;
-        background-position: center;
-        width: 100vw;
-        margin: 0;
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-
-
-        img{
-            display: none;
-        }
-    }
 }
 
 header h1{
     margin: 32px 0 24px;
     color: var(--titleColor);
-
-    @media screen and (min-width: 1024px){
-        margin: 0;
-    }
 }
 
 header section:nth-of-type(1) img{
@@ -81,10 +61,6 @@ header section:nth-of-type(1) img{
 header p{
     margin: 16px 0;
     padding: 0 48px;
-
-    @media screen and (min-width: 1024px) {
-        padding: 0 32px;
-    }
 }
 
 header section{
@@ -105,18 +81,42 @@ article {
     border-radius: 12px;
     padding: 8px 12px;
     margin: 16px 0;
+}
 
-    @media screen and (min-width: 1024px) {
+/* ======== MEDIA QUERIES HEADER DESKTOP ========= */
+
+@media screen and (min-width: 1024px) {
+    header {
+            background-image: url(./images/panoramic-shot-bicycle-wheels-riding.webp);
+            background-size: cover;
+            background-position: center;
+            width: 100vw;
+            margin: 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+    }
+
+    header img{
+        display: none;
+    }
+
+    header h1{
+        margin: 0;
+    }
+
+    header p{
+        padding: 0 32px;
+    }
+
+    article {
         width: 70%;
         margin: 16px auto;
         background-color: var(--titleColor);
         color: whitesmoke;
     }
-}
 
-header section article p, header section article h3{
-
-    @media screen and (min-width: 1024px) {
+    header section article p, header section article h3{
         color: whitesmoke;
     }
 }
@@ -151,7 +151,7 @@ main section img:nth-of-type(2){
     margin: 24px 0;
 }
 
-/* ======== MEDIA QUERY DESKTOP ========= */
+/* ======== MEDIA QUERIES MAIN DESKTOP ========= */
 
 @media screen and (min-width: 1024px){
     main{
@@ -194,7 +194,6 @@ main section img:nth-of-type(2){
             display: none;
     }
 }
-
 
 /* =========================================================== */
 

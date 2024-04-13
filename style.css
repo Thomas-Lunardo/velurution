@@ -50,9 +50,13 @@ header h1 {
     display: none;
 }
 
-
 header section:nth-of-type(1) img {
     width: 100%;
+}
+
+header picture img {
+    width: 12%;
+    margin-top: 40px;
 }
 
 header p {
@@ -65,13 +69,6 @@ header section:nth-of-type(2) {
     margin: 24px 16px;
 }
 
-
-header section:nth-of-type(2) img {
-    width: 15%;
-    border-radius: 4px;
-    box-shadow: none;
-}
-
 article {
     background-color: whitesmoke;
     box-shadow: var(--boxShadow);
@@ -79,6 +76,22 @@ article {
     padding: 8px 12px;
     margin: 16px 0;
 }
+
+/* ======== MEDIA QUERIES HEADER TABLET ========= */
+
+@media screen and (min-width: 568px) and (max-width: 1024px) {
+    header section:nth-of-type(2) {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header article {
+        width: 40%
+    }
+}
+
+
+/* ============================================== */
 
 /* ======== MEDIA QUERIES HEADER DESKTOP ========= */
 

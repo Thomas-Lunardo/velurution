@@ -43,19 +43,16 @@ body {
 
 header {
     text-align: center;
-    margin: 24px 16px;
+    margin-bottom: 32px;
 }
 
 header h1 {
-    margin: 32px 0 24px;
-    color: var(--titleColor);
+    display: none;
 }
+
 
 header section:nth-of-type(1) img {
     width: 100%;
-    border-radius: 16px;
-    margin-bottom: 32px;
-    box-shadow: var(--boxShadow);
 }
 
 header p {
@@ -63,13 +60,13 @@ header p {
     padding: 0 48px;
 }
 
-header section {
+header section:nth-of-type(2) {
     text-align: center;
     margin: 24px 16px;
 }
 
 
-header section img {
+header section:nth-of-type(2) img {
     width: 15%;
     border-radius: 4px;
     box-shadow: none;
@@ -130,6 +127,16 @@ main section {
     margin: 24px 16px;
 }
 
+main section:nth-of-type(1) h2 {
+    margin-top: 32px;
+}
+
+main section:nth-of-type(1) p:nth-of-type(1) {
+    margin: 24px 0 40px;
+    text-align: center;
+    padding: 0 70px;
+}
+
 main section:nth-of-type(2) p:nth-of-type(1) {
     margin-top: 24px;
 }
@@ -137,11 +144,6 @@ main section:nth-of-type(2) p:nth-of-type(1) {
 main section p {
     margin: 16px 8px;
     text-align: start;
-}
-
-main section img:nth-of-type(1) {
-    width: 18%;
-    margin: 24px 0 0;
 }
 
 main section img:nth-of-type(2) {

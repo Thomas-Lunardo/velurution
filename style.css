@@ -5,6 +5,7 @@
     --titleColor: rgba(242, 111, 82, 1);
     --main-font:'Nunito Sans', sans-serif;
     --boxShadow: 0px 3px 5px 3px rgba(69,69,69,0.59);
+    --textShadow: -1px 4px 4px rgba(15,7,4,0.41);
     --backgroundText: rgba(249, 246, 246, 1);
 }
 /* =========================================================== */
@@ -43,19 +44,20 @@ body {
 
 header {
     text-align: center;
-    margin: 24px 16px;
+    margin-bottom: 32px;
 }
 
 header h1 {
-    margin: 32px 0 24px;
-    color: var(--titleColor);
+    display: none;
 }
 
 header section:nth-of-type(1) img {
     width: 100%;
-    border-radius: 16px;
-    margin-bottom: 32px;
-    box-shadow: var(--boxShadow);
+}
+
+header picture img {
+    width: 12%;
+    margin-top: 40px;
 }
 
 header p {
@@ -63,16 +65,9 @@ header p {
     padding: 0 48px;
 }
 
-header section {
+header section:nth-of-type(2) {
     text-align: center;
     margin: 24px 16px;
-}
-
-
-header section img {
-    width: 15%;
-    border-radius: 4px;
-    box-shadow: none;
 }
 
 article {
@@ -82,6 +77,22 @@ article {
     padding: 8px 12px;
     margin: 16px 0;
 }
+
+/* ======== MEDIA QUERIES HEADER TABLET ========= */
+
+@media screen and (min-width: 568px) and (max-width: 1024px) {
+    header section:nth-of-type(2) {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header article {
+        width: 40%
+    }
+}
+
+
+/* ============================================== */
 
 /* ======== MEDIA QUERIES HEADER DESKTOP ========= */
 
@@ -130,6 +141,16 @@ main section {
     margin: 24px 16px;
 }
 
+main section:nth-of-type(1) h2 {
+    margin-top: 32px;
+}
+
+main section:nth-of-type(1) p:nth-of-type(1) {
+    margin: 24px 0 40px;
+    text-align: center;
+    padding: 0 70px;
+}
+
 main section:nth-of-type(2) p:nth-of-type(1) {
     margin-top: 24px;
 }
@@ -137,11 +158,8 @@ main section:nth-of-type(2) p:nth-of-type(1) {
 main section p {
     margin: 16px 8px;
     text-align: start;
-}
-
-main section img:nth-of-type(1) {
-    width: 18%;
-    margin: 24px 0 0;
+    letter-spacing: 0.09em;
+    line-height: 1.2em;
 }
 
 main section img:nth-of-type(2) {
@@ -150,6 +168,20 @@ main section img:nth-of-type(2) {
     box-shadow: var(--boxShadow);
     margin: 24px 0;
 }
+
+/* ======== MEDIA QUERIES MAIN TABLET ========= */
+
+@media screen and (min-width: 568px) and (max-width: 1024px) {
+    main {
+        padding: 0 50px;
+    }
+    main p{
+        letter-spacing: 0.09em;
+        line-height: 2ch;
+    }
+}
+
+/* ============================================ */
 
 /* ======== MEDIA QUERIES MAIN DESKTOP ========= */
 
@@ -206,6 +238,8 @@ footer {
 
 footer h3 {
     text-align: center;
+    text-shadow: var(--textShadow);
+    margin: 60px 0 40px;
 }
 
 footer section {
@@ -215,12 +249,39 @@ footer section {
     flex-direction: column;
 }
 
+.first-logo{
+    width: 65vw;
+}
+
 footer img {
-    width: 90vw;
+    width: 85vw;
     border-radius: 4px;
     box-shadow: var(--boxShadow);
     margin: 12px 0;
 }
+
+/* ======== MEDIA QUERIES FOOTER TABLET ========= */
+
+@media screen and (min-width: 568px) and (max-width: 1024px) {
+    footer section {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(2, 50vw);
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .first-logo {
+        width: 25vw;
+    }
+
+    footer img {
+        width: 40vw;
+    }
+}
+
+
+/* =============================================== */
 
 /* ======== MEDIA QUERIES FOOTER DESKTOP ========= */
 

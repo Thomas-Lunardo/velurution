@@ -5,6 +5,7 @@
     --titleColor: rgba(242, 111, 82, 1);
     --main-font:'Nunito Sans', sans-serif;
     --boxShadow: 0px 3px 5px 3px rgba(69,69,69,0.59);
+    --textShadow: -1px 4px 4px rgba(15,7,4,0.41);
     --backgroundText: rgba(249, 246, 246, 1);
 }
 /* =========================================================== */
@@ -221,6 +222,8 @@ footer {
 
 footer h3 {
     text-align: center;
+    text-shadow: var(--textShadow);
+    margin: 60px 0 40px;
 }
 
 footer section {
@@ -230,12 +233,39 @@ footer section {
     flex-direction: column;
 }
 
+.first-logo{
+    width: 65vw;
+}
+
 footer img {
-    width: 90vw;
+    width: 85vw;
     border-radius: 4px;
     box-shadow: var(--boxShadow);
     margin: 12px 0;
 }
+
+/* ======== MEDIA QUERIES FOOTER TABLET ========= */
+
+@media screen and (min-width: 568px) and (max-width: 1024px) {
+    footer section {
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(2, 50vw);
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .first-logo {
+        width: 25vw;
+    }
+
+    footer img {
+        width: 40vw;
+    }
+}
+
+
+/* =============================================== */
 
 /* ======== MEDIA QUERIES FOOTER DESKTOP ========= */
 

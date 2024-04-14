@@ -98,7 +98,7 @@ article {
 
 @media screen and (min-width: 1024px) {
     header {
-            background-image: url(./images/panoramic-shot-bicycle-wheels-riding.webp);
+            background-image: url(./images/quartiers_libres_desktop.webp);
             background-size: cover;
             background-position: center;
             width: 100vw;
@@ -113,7 +113,10 @@ article {
     }
 
     header h1 {
-        margin: 0;
+        display: block;
+        color: var(--titleColor);
+        font-size: 300%;
+        font-weight: bold;
     }
 
     header p {
@@ -121,7 +124,7 @@ article {
     }
 
     article {
-        width: 70%;
+        width: 30vw;
         margin: 16px auto;
         background-color: var(--titleColor);
         color: whitesmoke;

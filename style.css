@@ -165,6 +165,22 @@ main section p {
     line-height: 1.2em;
 }
 
+main button {
+    background-color: var(--titleColor);
+    width: 40vw;
+    height: 5vh;
+    border-radius: 10px;
+    box-shadow: var(--boxShadow);
+    border: none;
+    margin: 24px 0 32px;
+}
+
+main button a {
+    color: whitesmoke;
+    font-size: large;
+    font-weight: lighter;
+}
+
 /* ======== MEDIA QUERIES MAIN TABLET ========= */
 
 @media screen and (min-width: 568px) and (max-width: 1024px) {

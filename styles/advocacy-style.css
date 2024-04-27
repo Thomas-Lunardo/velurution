@@ -1,0 +1,135 @@
+/* ================== CSS VARIABLES ========================== */
+
+:root {
+    --backgroundColor: rgba(254, 251, 251, 1);
+    --titleColor: rgba(242, 111, 82, 1);
+    --main-font:'Nunito Sans', sans-serif;
+    --boxShadow: 0px 3px 5px 3px rgba(69,69,69,0.59);
+    --textShadow: -1px 4px 4px rgba(15,7,4,0.41);
+    --backgroundText: rgba(249, 246, 246, 1);
+}
+/* =========================================================== */
+
+/* =================== GOOGLE FONT =========================== /
+
+/* Nunito sans for the main text*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap');
+
+/* Source Sans 3 for h2 and h3(not Source Sans Pro on fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Source+Sans+3:wght@500&display=swap');
+
+/* =========================================================== */
+
+
+/* ==================== ALL & BODY =========================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: var(--main-font);
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: var(--backgroundColor);
+}
+
+/* ====================== HEADER ============================= */
+
+header {
+    background-image: url(../images/quartiers_libres_cut_opacity.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    height: 15rem;
+    position: relative;
+}
+
+header img {
+    width: 36px;
+    margin: 28px;
+    float: right;
+}
+
+header h1 {
+    color: var(--titleColor);
+    position: absolute;
+    font-size: 3em;
+    font-weight: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* ======== MEDIA QUERIES HEADER TABLET ========= */
+
+@media screen and (min-width: 568px) and (max-width: 1024px) {
+
+}
+
+
+/* ============================================== */
+
+/* ======== MEDIA QUERIES HEADER DESKTOP ========= */
+
+@media screen and (min-width: 1024px) {
+    header {
+            background-image: url(./images/quartiers_libres_desktop.webp);
+            background-size: cover;
+            background-position: bottom;
+            width: 100vw;
+            margin: 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+    }
+
+    header img {
+        display: none;
+    }
+}
+
+/* =========================================================== */
+
+/* ======================= MAIN ============================== */
+
+
+
+/* ======== MEDIA QUERIES MAIN TABLET ========= */
+
+@media screen and (min-width: 568px) and (max-width: 1024px) {
+
+}
+
+/* ============================================ */
+
+/* ======== MEDIA QUERIES MAIN DESKTOP ========= */
+
+@media screen and (min-width: 1024px){
+}
+
+/* =========================================================== */
+
+/* ======================= FOOTER ============================== */
+
+
+/* ======== MEDIA QUERIES FOOTER TABLET ========= */
+
+@media screen and (min-width: 568px) and (max-width: 1024px) {
+}
+
+
+/* =============================================== */
+
+/* ======== MEDIA QUERIES FOOTER DESKTOP ========= */
+
+@media screen and (min-width: 1024px) {
+}
+
+/* =========================================================== */

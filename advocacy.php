@@ -36,7 +36,7 @@ $advocacy = [
     'title' => 'Des politiques transversales pour soutenir la mobilité active des enfants',
     'argument' => 'Par des référents mobilités actives des enfants dans les communes dont la mission est de piloter ces sujets qui touchent aussi bien à la mobilité, aux sports, qu’à l’éducation, à la santé, ou encore à la sensibilisation des automobilistes.',
   ],
-]
+];
 
 ?>
 
@@ -67,7 +67,7 @@ $advocacy = [
     <?php foreach ($advocacy as $key => $value) { ?>
       <article>
         <img src="<?php echo $value['star'] ?>" alt="ilustration d'une étoile faisant du vélo">
-        <h3><?php echo $value['title'] ?></h3>
+        <h4><?php echo $value['title'] ?></h4>
         <p><?php echo $value['argument'] ?></p>
       </article>
     <?php } ?>

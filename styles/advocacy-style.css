@@ -148,6 +148,15 @@ main article {
     align-items: center;
 }
 
+main article img {
+    width: 16vw;
+}
+
+main article h4 {
+    text-align: center;
+    margin: 12px 24px;
+}
+
 /* ======== MEDIA QUERIES MAIN TABLET ========= */
 
 @media screen and (min-width: 568px) and (max-width: 1024px) {

@@ -140,6 +140,71 @@ article {
 
 /* =========================================================== */
 
+/* ================ NAV BAR ================== */
+
+nav {
+    display: none;
+}
+
+/* ==== MEDIA QUERIES NAV BAR TABLET ==== */
+
+@media screen and (min-width: 568px) and (max-width: 1024px) {
+    nav {
+        display: none;
+    }
+}
+
+/* ====================================== */
+
+/* ==== MEDIA QUERIES NAV BAR DESKTOP ==== */
+
+@media screen and (min-width: 1024px) {
+
+    nav {
+        display: block;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        background-color: var(--titleColor);
+        box-shadow: var(--boxShadow);
+    }
+
+    nav ul {
+        color: var(--titleColor);
+        display: flex;
+        margin-left: 50px;
+    }
+
+    nav ul li {
+        margin: 0 32px;
+    }
+
+    nav ul li a {
+        color: whitesmoke;
+        padding: 15px 40px;
+        font-weight: bold;
+        transition: background-color 0.6s;
+        transition: transform 0.5s;
+    }
+
+    nav ul li a:hover {
+        background-color: var(--hoverColorLink);
+        transform: scale(1.5); 
+    }
+
+    .active {
+        background-color: var(--activeColorClass);
+        font-weight: bolder;
+        font-size: large;
+    }
+}
+
+/* ====================================== */
+
+/* =========================================== */
+
+
+
 /* ======================= MAIN ============================== */
 
 main section {

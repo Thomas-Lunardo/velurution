@@ -68,16 +68,10 @@ header h1 {
     transform: translate(-50%, -50%);
 }
 
-nav {
-    display: none;
-}
-
 /* ======== MEDIA QUERIES HEADER TABLET ========= */
 
 @media screen and (min-width: 568px) and (max-width: 1024px) {
-    nav {
-        display: none;
-    }
+
 }
 
 
@@ -89,6 +83,29 @@ nav {
     header img {
         display: none;
     }
+}
+
+/* =========================================================== */
+
+/* ================ NAV BAR ================== */
+
+nav {
+    display: none;
+}
+
+/* ==== MEDIA QUERIES NAV BAR TABLET ==== */
+
+@media screen and (min-width: 568px) and (max-width: 1024px) {
+    nav {
+        display: none;
+    }
+}
+
+/* ====================================== */
+
+/* ==== MEDIA QUERIES NAV BAR DESKTOP ==== */
+
+@media screen and (min-width: 1024px) {
 
     nav {
         display: block;
@@ -127,10 +144,12 @@ nav {
         font-weight: bolder;
         font-size: large;
     }
-
 }
 
-/* =========================================================== */
+/* ====================================== */
+
+/* =========================================== */
+
 
 /* ======================= MAIN ============================== */
 

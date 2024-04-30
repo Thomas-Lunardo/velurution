@@ -9,6 +9,8 @@
     --boxShadow: 0px 3px 5px 3px rgba(69,69,69,0.59);
     --textShadow: -1px 4px 4px rgba(15,7,4,0.41);
     --backgroundText: rgba(249, 246, 246, 1);
+    --lineHeightP: 1.3em;
+    --letterSpacingP: 0.09em;
 }
 /* =========================================================== */
 
@@ -132,7 +134,19 @@ nav {
 
 /* ======================= MAIN ============================== */
 
+main p {
+    margin: 32px 18px;
+    line-height: var(--lineHeightP);
+    letter-spacing: var(--letterSpacingP);
+    font-size: small;
+}
 
+main article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /* ======== MEDIA QUERIES MAIN TABLET ========= */
 

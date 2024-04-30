@@ -3,10 +3,14 @@
 :root {
     --backgroundColor: rgba(254, 251, 251, 1);
     --titleColor: rgba(242, 111, 82, 1);
+    --activeColorClass: rgba(114, 90, 143, 1);
+    --hoverColorLink: rgba(0, 180, 96, 1);
     --main-font:'Nunito Sans', sans-serif;
     --boxShadow: 0px 3px 5px 3px rgba(69,69,69,0.59);
     --textShadow: -1px 4px 4px rgba(15,7,4,0.41);
     --backgroundText: rgba(249, 246, 246, 1);
+    --lineHeightP: 1.3em;
+    --letterSpacingP: 0.09em;
 }
 /* =========================================================== */
 
@@ -160,8 +164,8 @@ main section:nth-of-type(2) p:nth-of-type(1) {
 main section p {
     margin: 16px 8px;
     text-align: start;
-    letter-spacing: 0.09em;
-    line-height: 1.2em;
+    letter-spacing: var(--letterSpacingP);
+    line-height: var(--lineHeightP);
 }
 
 main button {

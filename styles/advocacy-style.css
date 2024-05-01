@@ -167,6 +167,7 @@ main article {
 
 main article img {
     width: 16vw;
+    margin-bottom: 12px;
 }
 
 main article h4 {
@@ -175,7 +176,7 @@ main article h4 {
 }
 
 main article p {
-    margin: 12px 18px 32px;
+    margin: 12px 18px;
 }
 
 /* ======== MEDIA QUERIES MAIN TABLET ========= */
@@ -193,7 +194,7 @@ main article p {
     }
 
     main article img {
-    width: 10vw;
+        width: 10vw;
     }
 }
 
@@ -202,6 +203,37 @@ main article p {
 /* ======== MEDIA QUERIES MAIN DESKTOP ========= */
 
 @media screen and (min-width: 1024px){
+
+    main p:first-child {
+        text-align: center;
+
+    }
+ 
+    .advocacy-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 50vw);
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    main article {
+        width: 40vw;
+        margin: 0 auto;
+        background-color: var(--backgroundText);
+        box-shadow: var(--boxShadow);
+        border-radius: 12px;
+        margin: 12px 4vw 30px;
+        padding: 10px 20px;
+    }
+
+       main article img {
+        width: 5vw;
+    }
+
+    main article p {
+        text-align: start;
+    }
+
 }
 
 /* =========================================================== */

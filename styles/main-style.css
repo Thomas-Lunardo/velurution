@@ -159,7 +159,6 @@ nav {
 /* ==== MEDIA QUERIES NAV BAR DESKTOP ==== */
 
 @media screen and (min-width: 1024px) {
-
     nav {
         display: block;
         height: 50px;

@@ -64,13 +64,15 @@ $advocacy = [
   <main>
     <p>Pour que les enfants puissent se déplacer en autonomie vers leurs activités, dans des quartiers plus vivants et respirables, nous demandons :
     </p>
-    <?php foreach ($advocacy as $key => $value) { ?>
-      <article>
-        <img src="<?php echo $value['star'] ?>" alt="ilustration d'une étoile faisant du vélo">
-        <h4><?php echo $value['title'] ?></h4>
-        <p><?php echo $value['argument'] ?></p>
-      </article>
-    <?php } ?>
+    <div class="advocacy-grid">
+      <?php foreach ($advocacy as $key => $value) { ?>
+        <article>
+          <img src="<?php echo $value['star'] ?>" alt="ilustration d'une étoile faisant du vélo">
+          <h4><?php echo $value['title'] ?></h4>
+          <p><?php echo $value['argument'] ?></p>
+        </article>
+      <?php } ?>
+    </div>
   </main>
 </body>
 

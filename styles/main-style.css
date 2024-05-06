@@ -3,10 +3,14 @@
 :root {
     --backgroundColor: rgba(254, 251, 251, 1);
     --titleColor: rgba(242, 111, 82, 1);
+    --activeColorClass: rgba(114, 90, 143, 1);
+    --hoverColorLink: rgba(0, 180, 96, 1);
     --main-font:'Nunito Sans', sans-serif;
     --boxShadow: 0px 3px 5px 3px rgba(69,69,69,0.59);
     --textShadow: -1px 4px 4px rgba(15,7,4,0.41);
     --backgroundText: rgba(249, 246, 246, 1);
+    --lineHeightP: 1.3em;
+    --letterSpacingP: 0.09em;
 }
 /* =========================================================== */
 
@@ -19,7 +23,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Source+Sans+3:wght@500&display=swap');
 
 /* =========================================================== */
-
 
 /* ==================== ALL & BODY =========================== */
 
@@ -98,7 +101,7 @@ article {
 
 @media screen and (min-width: 1024px) {
     header {
-            background-image: url(./images/quartiers_libres_desktop.webp);
+            background-image: url(../images/quartiers_libres_desktop.webp);
             background-size: cover;
             background-position: bottom;
             width: 100vw;
@@ -117,6 +120,7 @@ article {
         color: var(--titleColor);
         font-size: 300%;
         font-weight: bold;
+        font-style: italic;
     }
 
     header p {
@@ -136,6 +140,70 @@ article {
 }
 
 /* =========================================================== */
+
+/* ================ NAV BAR ================== */
+
+nav {
+    display: none;
+}
+
+/* ==== MEDIA QUERIES NAV BAR TABLET ==== */
+
+@media screen and (min-width: 568px) and (max-width: 1024px) {
+    nav {
+        display: none;
+    }
+}
+
+/* ====================================== */
+
+/* ==== MEDIA QUERIES NAV BAR DESKTOP ==== */
+
+@media screen and (min-width: 1024px) {
+    nav {
+        display: block;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        background-color: var(--titleColor);
+        box-shadow: var(--boxShadow);
+    }
+
+    nav ul {
+        color: var(--titleColor);
+        display: flex;
+        margin-left: 50px;
+    }
+
+    nav ul li {
+        margin: 0 32px;
+    }
+
+    nav ul li a {
+        color: whitesmoke;
+        padding: 15px 40px;
+        font-weight: bold;
+        transition: background-color 0.6s;
+        transition: transform 0.5s;
+    }
+
+    nav ul li a:hover {
+        background-color: var(--hoverColorLink);
+        transform: scale(1.5); 
+    }
+
+    .active {
+        background-color: var(--activeColorClass);
+        font-weight: bolder;
+        font-size: large;
+    }
+}
+
+/* ====================================== */
+
+/* =========================================== */
+
+
 
 /* ======================= MAIN ============================== */
 
@@ -161,8 +229,24 @@ main section:nth-of-type(2) p:nth-of-type(1) {
 main section p {
     margin: 16px 8px;
     text-align: start;
-    letter-spacing: 0.09em;
-    line-height: 1.2em;
+    letter-spacing: var(--letterSpacingP);
+    line-height: var(--lineHeightP);
+}
+
+main button {
+    background-color: var(--titleColor);
+    width: 40vw;
+    height: 5vh;
+    border-radius: 10px;
+    box-shadow: var(--boxShadow);
+    border: none;
+    margin: 24px 0 32px;
+}
+
+main button a {
+    color: whitesmoke;
+    font-size: large;
+    font-weight: lighter;
 }
 
 /* ======== MEDIA QUERIES MAIN TABLET ========= */
@@ -216,6 +300,11 @@ main section p {
     main section p {
         margin: 16px 8px;
         text-align: start;
+    }
+
+    main button {
+        width: 15vw;
+        margin: 8px auto;
     }
 
     main section img:nth-of-type(1) {

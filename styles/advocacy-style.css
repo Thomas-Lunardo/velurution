@@ -9,8 +9,8 @@
     --boxShadow: 0px 3px 5px 3px rgba(69,69,69,0.59);
     --textShadow: -1px 4px 4px rgba(15,7,4,0.41);
     --backgroundText: rgba(249, 246, 246, 1);
-    --lineHeightP: 1.3em;
-    --letterSpacingP: 0.09em;
+    --lineHeightP: 1.5em;
+    --letterSpacingP: 0.10em;
 }
 /* =========================================================== */
 
@@ -163,6 +163,7 @@ main article {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 12px 0 32px;
 }
 
 main article img {
@@ -173,10 +174,12 @@ main article img {
 main article h4 {
     text-align: center;
     margin: 8px 24px;
+    letter-spacing: var(--letterSpacingP);
 }
 
 main article p {
     margin: 12px 18px;
+    letter-spacing: var(--letterSpacingP);
 }
 
 /* ======== MEDIA QUERIES MAIN TABLET ========= */

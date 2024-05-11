@@ -52,12 +52,12 @@ $advocacy = [
 
 <body>
   <header>
-    <a href="index.html"><img src="./icones/icon_house.png" alt="icone d'une maison" /></a>
+    <a href="./index.php"><img src="./icones/icon_house.png" alt="icone d'une maison" /></a>
     <h1>Plaidoyer</h1>
   </header>
   <nav>
     <ul>
-      <li><a href="./index.html">Accueil</a></li>
+      <li><a href="./index.php">Accueil</a></li>
       <li><a href="./advocacy.php" class="active">Plaidoyer</a></li>
     </ul>
   </nav>

@@ -111,9 +111,9 @@ $organisation = [
           le déploiement de politiques permettant de développer les mobilités
           actives de tous les enfants
         </p>
-        <button>
+        <div class="advocacay-cat">
           <a href="advocacy.php">Plaidoyer</a>
-        </button>
+        </div>
         <p>
           Pour Clément Drognat Landré de La Rue Est À Nous, “il est urgent de
           rééquilibrer le partage de l’espace public en faveur des enfants et
@@ -145,7 +145,7 @@ $organisation = [
     </section>
   </main>
   <footer>
-    <h3>Associations partenaires</h3>
+    <h2>Associations partenaires</h2>
     <section>
       <?php foreach ($organisation as $key => $value) { ?>
         <a href="<?php echo $value['link'] ?>" target="_blank">

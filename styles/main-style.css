@@ -233,18 +233,19 @@ main section p {
     line-height: var(--lineHeightP);
 }
 
-main button {
+.advocacay-cat {
+    display: flex;
+    justify-content: center;
+    margin: 55px 32px;
+}
+
+main a {
     background-color: var(--titleColor);
-    width: 40vw;
-    height: 5vh;
+    color: var(--backgroundText);
     border-radius: 10px;
     box-shadow: var(--boxShadow);
     border: none;
-    margin: 24px 0 32px;
-}
-
-main button a {
-    color: whitesmoke;
+    padding: 15px 32px;
     font-size: large;
     font-weight: lighter;
 }
@@ -293,7 +294,7 @@ main button a {
         display: flex;
         flex-direction: column;
         margin: 32px auto;
-        padding: 0 57px;
+        padding: 0 20px;
         width: 60%;
     }
 
@@ -302,9 +303,14 @@ main button a {
         text-align: start;
     }
 
-    main button {
-        width: 15vw;
-        margin: 8px auto;
+    .advocacay-cat {
+        margin: 20px auto;
+        width: 60%;
+        transition: all 1.1s ease-in-out;
+    }
+
+    .advocacay-cat:hover {
+        transform: scale(1.1);
     }
 
     main section img:nth-of-type(1) {
@@ -321,7 +327,7 @@ footer {
     margin-bottom: 24px;
 }
 
-footer h3 {
+footer h2 {
     text-align: center;
     text-shadow: var(--textShadow);
     margin: 60px 0 40px;

@@ -75,8 +75,10 @@ $organisation = [
         </p>
       </article>
       <article>
+        <a href="./sunday.php">
         <h3>Dimanche 23 juin 2024</h3>
         <p>Vélorution enfants</p>
+        </a>
       </article>
     </section>
   </header>

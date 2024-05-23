@@ -66,6 +66,7 @@ require './src/setTime.php';
         <section>
             <h6>L'organisation</h6>
             <img src="./assets/images/étoile_3.png" alt="illustration d'une étoile verte souriante faisant du vélo avec un petit personnage pour panier avant">
+            <p>10h00</p>
             <p>Rendez-vous sur la place des terreaux</p>
             <p>Des musiciens accompagneront le cortège, et de nombreuses animations (Pimp’ Mon Vélo, parcours d’obstacle, jeux sur les mobilités…) sont prévues au départ et à l’arrivée. Vélos, trottinettes, rollers (...) sont tous bienvenus !</p>
             <img src="./assets/images/place-des-terreaux.webp" alt="photo de la place des Terreaux à Lyon avec vue sur l'hotel de ville">

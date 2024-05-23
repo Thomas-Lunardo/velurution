@@ -303,6 +303,46 @@ main section:nth-of-type(3) a {
 
 /* =================================== */
 
+/* === FOURTH SECTION (ORGANIZATION)=== */
+
+main section:nth-of-type(4) {
+    text-align: center;
+}
+
+main section:nth-of-type(4) h6 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: lighter;
+    margin: 12px 0 24px;
+}
+
+main section:nth-of-type(4) img:first-of-type{
+    width: 50px;
+    margin: 0 auto;
+}
+
+main section:nth-of-type(4) p:nth-of-type(3){
+    text-align: start;
+    margin: 12px 8px;
+    line-height: var(--lineHeightP);
+    letter-spacing: var(--letterSpacingP);
+}
+
+main section:nth-of-type(4) img:nth-of-type(2),
+main section:nth-of-type(4) img:nth-of-type(4) {
+    border-radius: var(--borderRadius);
+    box-shadow: var(--boxShadow);
+    margin: 24px 0;
+
+}
+
+main section:nth-of-type(4) img:nth-of-type(3) {
+    width: 20vw;
+    margin: 8px auto;
+}
+
+/* =================================== */
+
 /* ======== MEDIA QUERIES MAIN TABLET ========= */
 
 @media screen and (min-width: 568px) and (max-width: 1024px) {

@@ -6,11 +6,13 @@
     --activeColorClass: rgba(114, 90, 143, 1);
     --hoverColorLink: rgba(0, 180, 96, 1);
     --main-font:'Nunito Sans', sans-serif;
+    --fontSizeP: 0.9em;
     --boxShadow: 0px 3px 5px 3px rgba(69,69,69,0.59);
     --textShadow: -1px 4px 4px rgba(15,7,4,0.41);
     --backgroundText: rgba(249, 246, 246, 1);
     --lineHeightP: 1.5em;
     --letterSpacingP: 0.10em;
+    --borderRadius: 10px;
 }
 /* =========================================================== */
 
@@ -148,12 +150,21 @@ nav {
 
 /* ======================= MAIN ============================== */
 
+/* === ALL SECTIONS === */
+
+main section {
+    margin: 32px 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==================== */
+
 /* === FIRST SECTION === */
 
 main section:nth-of-type(1) div img {
-    width: 50px;
-    margin-top: 24px;
-    margin-left: 20vw;
+    width: 45px;
+    margin-left: 18vw;
 }
 
 main section:nth-of-type(1) div:nth-of-type(1) div {
@@ -161,7 +172,7 @@ main section:nth-of-type(1) div:nth-of-type(1) div {
     box-shadow: var(--boxShadow);
     border-radius: 12px;
     padding: 8px 12px;
-    margin: 0 10vw 24px;
+    margin: 0 8vw 37px;
     height: 15vh;
     display: flex;
     flex-direction: column;
@@ -179,7 +190,7 @@ main section:nth-of-type(1) div:nth-of-type(1) div p:nth-of-type(2){
 }
 
 main section:nth-of-type(1) div:nth-of-type(2) {
-    margin: 32px;
+    margin: 12px 12px 24px;
     line-height: var(--lineHeightP);
     letter-spacing: var(--letterSpacingP);
     font-size: 0.9em;
@@ -189,14 +200,9 @@ main section:nth-of-type(1) div:nth-of-type(2) p:first-of-type {
     margin-top: 12px;
 }
 
-/* ========================= */
+/* ====================================== */
 
-/* === SECOND SECTION (COUNTDOWN) === */
-
-main section:nth-of-type(2) {
-display: flex;
-flex-direction: column;
-}
+/* ===== SECOND SECTION (COUNTDOWN) ===== */
 
 main section:nth-of-type(2) h6{
     font-size: 1.5em;
@@ -244,7 +250,58 @@ main section:nth-of-type(2) div div p:nth-of-type(2) {
     font-size: 2em;
 }
 
-/* ========================= */
+/* =================================== */
+
+/* === THRID SECTION (THIS THE WAY)=== */
+
+main section:nth-of-type(3) h6 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: lighter;
+    margin: 12px 0 24px;
+}
+
+main section:nth-of-type(3) p:first-of-type {
+    text-align: center;
+    font-size: 3em;
+    margin: 12px 0 24px;
+}
+
+main section:nth-of-type(3) p:nth-of-type(2) {
+    letter-spacing: var(--letterSpacingP);
+    line-height: var(--lineHeightP);
+    font-size: var(--fontSizeP);
+    margin: 12px 12px 24px;
+}
+
+main section:nth-of-type(3) div {
+    display: flex;
+    flex-direction: column;
+}
+
+main section:nth-of-type(3) img:first-of-type {
+    width: 50px;
+    margin: 12px 0 0 32px;
+}
+
+main section:nth-of-type(3) img:nth-of-type(2) {
+    border-radius: var(--borderRadius);
+    box-shadow: var(--boxShadow);
+    margin-bottom: 12px;
+}
+
+main section:nth-of-type(3) a {
+    text-align: center;
+    background-color: var(--titleColor);
+    color: var(--backgroundText);
+    border-radius: var(--borderRadius);
+    font-size: 1.5em;
+    width: 60vw;
+    margin: 12px auto;
+    padding: 14px 0;
+}
+
+/* =================================== */
 
 /* ======== MEDIA QUERIES MAIN TABLET ========= */
 

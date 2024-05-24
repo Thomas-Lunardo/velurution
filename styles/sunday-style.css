@@ -10,8 +10,8 @@
     --boxShadow: 0px 3px 5px 3px rgba(69,69,69,0.59);
     --textShadow: -1px 4px 4px rgba(15,7,4,0.41);
     --backgroundText: rgba(249, 246, 246, 1);
-    --lineHeightP: 1.5em;
-    --letterSpacingP: 0.10em;
+    --lineHeightP: 1.4em;
+    --letterSpacingP: 0.08em;
     --borderRadius: 10px;
 }
 /* =========================================================== */
@@ -316,14 +316,26 @@ main section:nth-of-type(4) h6 {
     margin: 12px 0 24px;
 }
 
-main section:nth-of-type(4) img:first-of-type{
-    width: 50px;
-    margin: 0 auto;
+main section:nth-of-type(4) img:nth-child(2){
+    width: 75px;
+    margin: 12px auto;
+}
+
+main section:nth-of-type(4) p:nth-of-type(1){
+    font-size: 2.5em;
+    line-height: var(--lineHeightP);
+    letter-spacing: var(--letterSpacingP);
+}
+
+main section:nth-of-type(4) p:nth-of-type(2){
+    margin: 12px 0;
+    line-height: var(--lineHeightP);
+    letter-spacing: var(--letterSpacingP);
 }
 
 main section:nth-of-type(4) p:nth-of-type(3){
     text-align: start;
-    margin: 12px 8px;
+    margin: 12px;
     line-height: var(--lineHeightP);
     letter-spacing: var(--letterSpacingP);
 }
@@ -338,7 +350,22 @@ main section:nth-of-type(4) img:nth-of-type(4) {
 
 main section:nth-of-type(4) img:nth-of-type(3) {
     width: 20vw;
-    margin: 8px auto;
+    margin: 6px auto;
+}
+
+main section:nth-of-type(4) a {
+    background-color: var(--titleColor);
+    color: var(--backgroundText);
+    border-radius: var(--borderRadius);
+    font-size: 1.5em;
+    width: 95vw;
+    margin: 8px auto 24px;
+    padding: 14px 0;
+}
+
+main section:nth-of-type(4) div img:first-of-type {
+    width: 25vw;
+    margin: 24px auto 0;
 }
 
 /* =================================== */

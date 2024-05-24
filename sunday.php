@@ -74,7 +74,7 @@ require './src/setTime.php';
             <div>
                 <img src="./assets/images/étoile_5.png" alt="illustration de deux étoiles souriantes faisant du tandem">
                 <p>11h00</p>
-                <p>Départ</p>
+                <p>Départ !</p>
             </div>
             <img src="./assets/icones/arrow-way.png" alt="dessin d'une flêche qui zig-zig">
             <div>

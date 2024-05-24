@@ -74,7 +74,6 @@ header h1 {
 @media screen and (min-width: 568px) and (max-width: 1024px) {
     header {
         background-position: top;
-        height: 25vh;
     }
 
     header h1 {
@@ -228,6 +227,14 @@ main section:nth-of-type(1) div:nth-of-type(2) p:first-of-type {
     main section:nth-of-type(1) div:nth-of-type(1) div {
         width: 50vw;
     }
+
+    main section:nth-of-type(1) div:nth-of-type(2) {
+        margin: 24px 7vw 24px;
+    }
+
+    main section:nth-of-type(1) div:nth-of-type(2) p:first-of-type {
+        margin-top: 20px;
+    }
 }
 
 /* ============================================ */
@@ -281,6 +288,44 @@ main section:nth-of-type(2) div div p:nth-of-type(2) {
 }
 
 /* =================================== */
+
+/* ==== MEDIA QUERIES MAIN SECOND SECTION TABLET (COUNTDOWN) ==== */
+
+@media screen and (min-width: 568px) and (max-width: 1024px) {
+    main section:nth-of-type(2) h6{
+        position: relative;
+        left: 0;
+        text-align: center;
+  
+    }
+    .countdown-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    main section:nth-of-type(2) img{
+        width: 60px;
+        position: absolute;
+        right: 80vw;
+        margin-bottom: 3vh;
+    }
+
+    .countdown-container-unity {
+        width: 65vw;
+        height: 10vh;
+    }
+
+    main section:nth-of-type(2) div div p:nth-of-type(1) {
+        font-size: 1.2em;
+    }
+
+    main section:nth-of-type(2) div div p:nth-of-type(2) {
+        font-size: 3.3em;
+    }
+}
+
+/* ==================================================== */
 
 /* === THRID SECTION (THIS THE WAY)=== */
 

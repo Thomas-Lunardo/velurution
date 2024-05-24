@@ -85,6 +85,12 @@ require './src/setTime.php';
             <img src="./assets/images/parcblandan_ramparts.webp" alt="photo des ramparts du parc Blandan et son aire de jeux avec des toboggan">
             <a href="https://maps.app.goo.gl/KSu4UM3c2ywLJaQw9" target="_blank">Me rendre au parc Blandan</a>
         </section>
+        <section>
+            <h6>Participation</h6>
+            <p>L’inscription n’est bien sûr pas obligatoire, mais elle nous permet de mieux estimer le nombre de personnes présentes pour préparer l’événement !</p>
+            <a href="https://maps.app.goo.gl/KSu4UM3c2ywLJaQw9" target="_blank">Je participe avec des enfants</a>
+            <a href="https://maps.app.goo.gl/KSu4UM3c2ywLJaQw9" target="_blank">Je souhaite aider</a>
+        </section>
     </main>
 </body>
 

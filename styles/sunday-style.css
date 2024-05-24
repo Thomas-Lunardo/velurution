@@ -169,7 +169,7 @@ main section {
 
 /* === FIRST SECTION === */
 
-main section:nth-of-type(1) div img {
+main section:nth-of-type(1) img {
     width: 45px;
     margin-left: 18vw;
 }
@@ -185,7 +185,6 @@ main section:nth-of-type(1) div:nth-of-type(1) div {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    
 }
 
 main section:nth-of-type(1) div:nth-of-type(1) div p:nth-of-type(1) {
@@ -208,6 +207,30 @@ main section:nth-of-type(1) div:nth-of-type(2) p:first-of-type {
 }
 
 /* ====================================== */
+
+/* ==== MEDIA QUERIES MAIN FIRST SECTION TABLET ==== */
+
+@media screen and (min-width: 568px) and (max-width: 1024px) {
+    main section:nth-of-type(1) div:nth-of-type(1) {
+        margin: 32px auto;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    main section:nth-of-type(1) img {
+        width: 11vw;
+        margin-left: 70vw;
+        margin-top: 22px;
+        position: absolute;
+    }
+
+    main section:nth-of-type(1) div:nth-of-type(1) div {
+        width: 50vw;
+    }
+}
+
+/* ============================================ */
 
 /* ===== SECOND SECTION (COUNTDOWN) ===== */
 
@@ -414,7 +437,7 @@ main section:nth-of-type(5) a:nth-of-type(2) {
 
 /* =================================== */
 
-/* ======== MEDIA QUERIES MAIN TABLET ========= */
+/* ==== MEDIA QUERIES MAIN FIRST SECTION TABLET ==== */
 
 @media screen and (min-width: 568px) and (max-width: 1024px) {
 }

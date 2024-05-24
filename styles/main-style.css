@@ -101,7 +101,7 @@ article {
 
 @media screen and (min-width: 1024px) {
     header {
-            background-image: url(../images/quartiers_libres_desktop.webp);
+            background-image: url(../assets/images/quartiers_libres_desktop.webp);
             background-size: cover;
             background-position: bottom;
             width: 100vw;

@@ -3,43 +3,43 @@
 $organisation = [
   [
     'link' => 'https://larueestanouslyon.fr/accueil',
-    'src' => './logos/la_rue_est_à_nous.webp',
+    'src' => './assets/logos/la_rue_est_à_nous.webp',
     'alt' => 'logo de l\'association La rue et à nous 69',
     'class' => 'first-logo',
   ],
   [
     'link' => 'https://www.maisonduvelolyon.org/',
-    'src' => '/logos/maison_du_vélo_lyon.webp',
+    'src' => './assets/logos/maison_du_vélo_lyon.webp',
     'alt' => 'logo de l\'association Greenpeace',
     'class' => '',
   ],
   [
     'link' => 'https://www.greenpeace.fr/',
-    'src' => './logos/Greenpeace_logo.webp',
+    'src' => './assets/logos/Greenpeace_logo.webp',
     'alt' => 'logo de l\'association Greenpeace',
     'class' => '',
   ],
   [
     'link' => 'https://cleancitiescampaign.org/',
-    'src' => './logos/Clean-Cities.webp',
+    'src' => './assets/logos/Clean-Cities.webp',
     'alt' => 'logo de l\'association Clean-Cities',
     'class' => '',
   ],
   [
     'link' => 'https://rhone.alternatiba.eu/',
-    'src' => './logos/alternatiba_rhone.webp',
+    'src' => './assets/logos/alternatiba_rhone.webp',
     'alt' => 'logo de l\'association Alternatiba',
     'class' => '',
   ],
   [
     'link' => 'https://clavette-lyon.heureux-cyclage.org',
-    'src' => './logos/clavette_lyonaise.webp',
+    'src' => './assets/logos/clavette_lyonaise.webp',
     'alt' => 'logo de l\'association Clavette',
     'class' => '',
   ],
   [
     'link' => 'https://lavilleavelo.org/',
-    'src' => './logos/la_ville_à_vélo.webp',
+    'src' => './assets/logos/la_ville_à_vélo.webp',
     'alt' => 'logo de l\'association La ville à vélo',
     'class' => '',
   ],
@@ -61,10 +61,10 @@ $organisation = [
   <header>
     <section>
       <h1>Quartiers libres #2</h1>
-      <img src="./images/quartiers_libres_2.webp" alt="photo d'enfant faisant du vélo avec titre quartiers libres #2 en haut de la photo" />
+      <img src="./assets/images/quartiers_libres_2.webp" alt="photo d'enfant faisant du vélo avec titre quartiers libres #2 en haut de la photo" />
     </section>
     <picture>
-      <img src="./icones/calendar.png" alt="icone d'un calendrier" />
+      <img src="./assets/icones/calendar.png" alt="icone d'un calendrier" />
     </picture>
     <section>
       <article>
@@ -75,8 +75,10 @@ $organisation = [
         </p>
       </article>
       <article>
+        <a href="./sunday.php">
         <h3>Dimanche 23 juin 2024</h3>
         <p>Vélorution enfants</p>
+        </a>
       </article>
     </section>
   </header>
@@ -88,7 +90,7 @@ $organisation = [
   </nav>
   <main>
     <section>
-      <img src="./icones/bike.png" alt="icone d'un vélocycliste" />
+      <img src="./assets/icones/bike.png" alt="icone d'un vélocycliste" />
       <h2>Viva la vélorution !</h2>
       <p>Favorisons la mobilité des enfants dans le Grand Lyon !</p>
     </section>

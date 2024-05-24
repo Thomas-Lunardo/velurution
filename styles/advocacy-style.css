@@ -44,7 +44,7 @@ body {
 /* ====================== HEADER ============================= */
 
 header {
-    background-image: url(../images/quartiers_libres_cut_opacity.webp);
+    background-image: url(../assets/images/quartiers_libres_cut_opacity.webp);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom;

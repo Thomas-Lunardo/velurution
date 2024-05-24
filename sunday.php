@@ -88,8 +88,8 @@ require './src/setTime.php';
         <section>
             <h6>Participation</h6>
             <p>L’inscription n’est bien sûr pas obligatoire, mais elle nous permet de mieux estimer le nombre de personnes présentes pour préparer l’événement !</p>
-            <a href="https://maps.app.goo.gl/KSu4UM3c2ywLJaQw9" target="_blank">Je participe avec des enfants</a>
-            <a href="https://maps.app.goo.gl/KSu4UM3c2ywLJaQw9" target="_blank">Je souhaite aider</a>
+            <a href="https://framaforms.org/participation-a-la-velorution-enfants-23-juin-2024-1713537427" target="_blank">Je participe avec des enfants</a>
+            <a href="https://framaforms.org/je-veux-aider-a-lorganisation-de-la-velorution-enfants-1713525121" target="_blank">Je souhaite aider</a>
         </section>
     </main>
 </body>

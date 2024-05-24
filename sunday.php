@@ -13,7 +13,7 @@ require './src/setTime.php';
 </head>
 
 <body>
-    <header>
+    <header id="up">
         <a href="./index.php"><img src="./assets/icones/icon_house.png" alt="icone d'une maison" /></a>
         <h1>Vélorution enfants</h1>
     </header>
@@ -71,16 +71,18 @@ require './src/setTime.php';
             <p>Des musiciens accompagneront le cortège, et de nombreuses animations (Pimp’ Mon Vélo, parcours d’obstacle, jeux sur les mobilités…) sont prévues au départ et à l’arrivée. Vélos, trottinettes, rollers (...) sont tous bienvenus !</p>
             <img src="./assets/images/place-des-terreaux.webp" alt="photo de la place des Terreaux à Lyon avec vue sur l'hotel de ville">
             <a href="https://maps.app.goo.gl/QRhSEUg9tsU6ucE47" target="_blank">Me rendre aux Terreaux</a>
-            <div>
-                <img src="./assets/images/étoile_5.png" alt="illustration de deux étoiles souriantes faisant du tandem">
-                <p>11h00</p>
-                <p>Départ !</p>
-            </div>
-            <img src="./assets/icones/arrow-way.png" alt="dessin d'une flêche qui zig-zig">
-            <div>
-                <img src="./assets/images/étoile_7.png" alt="illustration d'une étoile faisant du vélo tirant un soleil souriant dans une charette">
-                <p>12h00</p>
-                <p>Arrivée prévue au Parc Blandan</p>
+            <div class="the-way">
+                <div>
+                    <img src="./assets/images/étoile_5.png" alt="illustration de deux étoiles souriantes faisant du tandem">
+                    <p>11h00</p>
+                    <p>Départ !</p>
+                </div>
+                <img src="./assets/icones/arrow-way.png" alt="dessin d'une flêche qui zig-zig">
+                <div>
+                    <img src="./assets/images/étoile_7.png" alt="illustration d'une étoile faisant du vélo tirant un soleil souriant dans une charette">
+                    <p>12h00</p>
+                    <p>Arrivée prévue au Parc Blandan</p>
+                </div>
             </div>
             <img src="./assets/images/parcblandan_ramparts.webp" alt="photo des ramparts du parc Blandan et son aire de jeux avec des toboggan">
             <a href="https://maps.app.goo.gl/KSu4UM3c2ywLJaQw9" target="_blank">Me rendre au parc Blandan</a>
@@ -92,6 +94,9 @@ require './src/setTime.php';
             <a href="https://framaforms.org/je-veux-aider-a-lorganisation-de-la-velorution-enfants-1713525121" target="_blank">Je souhaite aider</a>
         </section>
     </main>
+    <footer>
+        <a href="#up"><img src="./assets/icones/chevron_purple_up.png" alt="chevron violet qui vous ramène en haut de page"></a>
+    </footer>
 </body>
 
 </html>

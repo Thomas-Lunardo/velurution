@@ -50,23 +50,25 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 23vh;
-    position: relative;
+    height: 20vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header img {
     width: 36px;
-    margin: 28px;
-    float: right;
+    position: fixed;
+    top: 2%;
+    right: 4%;
 }
 
 header h1 {
     color: var(--titleColor);
     font-size: 2.3em;
     font-weight: lighter;
-    text-align: center;
+    font-weight: 100;
 }
 
 /* ======== MEDIA QUERIES HEADER TABLET ========= */
@@ -74,6 +76,12 @@ header h1 {
 @media screen and (min-width: 568px) and (max-width: 1024px) {
     header {
         background-position: top;
+        height: 25vh;
+    }
+
+    header img {
+        width: 40px;
+        top: 3%;
     }
 
     header h1 {
@@ -164,6 +172,11 @@ main section {
     flex-direction: column;
 }
 
+main section p {
+    line-height: 1.3em;
+    letter-spacing: 0.04em;
+}
+
 /* LINKS MOBILE*/
 
 main section a {
@@ -204,7 +217,7 @@ main section:nth-of-type(1) div:nth-of-type(1) div {
     border-radius: 12px;
     padding: 8px 12px;
     margin: 0 8vw 37px;
-    height: 15vh;
+    height: 13vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -244,13 +257,26 @@ main section:nth-of-type(1) div:nth-of-type(2) p:first-of-type {
 
     main section:nth-of-type(1) img {
         width: 11vw;
-        margin-left: 70vw;
-        margin-top: 22px;
+        margin-left: 78vw;
+        margin-top: 2.5vh;
         position: absolute;
     }
 
     main section:nth-of-type(1) div:nth-of-type(1) div {
-        width: 50vw;
+        width: 60vw;
+        height: 12vh;
+    }
+
+        main section:nth-of-type(1) div:nth-of-type(1) div p:nth-of-type(2) {
+        display: none;
+    }
+
+    main section:nth-of-type(1) div:nth-of-type(1) div p:first-of-type {
+        font-size: 1.8em;
+    }
+
+    main section:nth-of-type(1) div:nth-of-type(1) div p:nth-of-type(2) {
+        display: none;
     }
 
     main section:nth-of-type(1) div:nth-of-type(2) {
@@ -290,7 +316,7 @@ main section:nth-of-type(2) img{
 .countdown-container-unity {
     background-color: rgba(46, 38, 48, 1);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     margin: 0 5vw 32px;
     padding: 12px 0;
@@ -303,6 +329,8 @@ main section:nth-of-type(2) img{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding-top: 0.9vh;
 }
 
 main section:nth-of-type(2) div div p:nth-of-type(1) {
@@ -336,13 +364,13 @@ main section:nth-of-type(2) div div p:nth-of-type(2) {
     main section:nth-of-type(2) img{
         width: 60px;
         position: absolute;
-        right: 80vw;
+        right: 79.5vw;
         margin-bottom: 3vh;
     }
 
     .countdown-container-unity {
         width: 65vw;
-        height: 10vh;
+        height: 13vh;
     }
 
     main section:nth-of-type(2) div div p:nth-of-type(1) {
@@ -360,7 +388,7 @@ main section:nth-of-type(2) div div p:nth-of-type(2) {
 
 main section:nth-of-type(3) h6 {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.9em;
     font-weight: lighter;
     margin: 12px 0 24px;
 }
@@ -431,9 +459,9 @@ main section:nth-of-type(4) {
 
 main section:nth-of-type(4) h6 {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.9em;
     font-weight: lighter;
-    margin: 12px 0 24px;
+    margin: 7vh 0 24px;
 }
 
 .et-star {
@@ -562,9 +590,9 @@ main section:nth-of-type(5) {
 
 main section:nth-of-type(5) h6 {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.9em;
     font-weight: lighter;
-    margin: 32px 0 24px;
+    margin: 7vh 0 24px;
 }
 
 main section:nth-of-type(5) p {

@@ -3,15 +3,17 @@
 :root {
     --backgroundColor: rgba(254, 251, 251, 1);
     --titleColor: rgba(242, 111, 82, 1);
-    --activeColorClass: rgba(114, 90, 143, 1);
-    --hoverColorLink: rgba(0, 180, 96, 1);
+    --activeColorClass: rgb(141, 111, 177);
     --main-font:'Nunito Sans', sans-serif;
+    --fontSizeP: 0.9em;
     --boxShadow: 0px 3px 5px 3px rgba(69,69,69,0.59);
     --textShadow: -1px 4px 4px rgba(15,7,4,0.41);
     --backgroundText: rgba(249, 246, 246, 1);
     --lineHeightP: 1.3em;
-    --letterSpacingP: 0.09em;
+    --letterSpacingP: 0.03em;
+    --borderRadius: 10px;
 }
+
 /* =========================================================== */
 
 /* =================== GOOGLE FONT =========================== /
@@ -162,34 +164,39 @@ nav {
 @media screen and (min-width: 1024px) {
     nav {
         display: block;
-        height: 50px;
-        display: flex;
-        align-items: center;
         background-color: var(--titleColor);
         box-shadow: var(--boxShadow);
     }
 
     nav ul {
         color: var(--titleColor);
+        height: 5vh;
         display: flex;
+        align-items: center;
+        justify-content: space-evenly;
         margin-left: 50px;
     }
 
     nav ul li {
         margin: 0 32px;
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 30px;
+        transition: background-color 2s;
+        transition: transform 2s;
+    }
+
+    nav ul li:hover {
+        transform: scale(1.1);
+        background-color: var(--activeColorClass);
+        border-radius: var(--borderRadius);
     }
 
     nav ul li a {
-        color: whitesmoke;
-        padding: 15px 40px;
-        font-weight: bold;
-        transition: background-color 0.6s;
-        transition: transform 0.5s;
-    }
-
-    nav ul li a:hover {
-        background-color: var(--hoverColorLink);
-        transform: scale(1.5); 
+        color: var(--backgroundText);
+        font-size: 1.2em;
     }
 
     .active {

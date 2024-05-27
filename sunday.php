@@ -20,8 +20,8 @@ require './src/setTime.php';
     <nav>
         <ul>
             <li><a href="./index.php">Accueil</a></li>
+            <li class="active"><a href="./sunday.php">Vélorution</a></li>
             <li><a href="./advocacy.php">Plaidoyer</a></li>
-            <li><a href="./sunday.php" class="active">Vélorution</a></li>
         </ul>
     </nav>
     <main>
@@ -67,7 +67,7 @@ require './src/setTime.php';
             <h6>L'organisation</h6>
             <img src="./assets/images/étoile_3.png" alt="illustration d'une étoile verte souriante faisant du vélo avec un petit personnage pour panier avant" class="et-star">
             <p>10h00</p>
-            <p>Rendez-vous sur la place des terreaux</p>
+            <p>Rendez-vous sur la <strong>place des terreaux</strong></p>
             <p>Des musiciens accompagneront le cortège, et de nombreuses animations (Pimp’ Mon Vélo, parcours d’obstacle, jeux sur les mobilités…) sont prévues au départ et à l’arrivée. Vélos, trottinettes, rollers (...) sont tous bienvenus !</p>
             <img src="./assets/images/place-des-terreaux.webp" alt="photo de la place des Terreaux à Lyon avec vue sur l'hotel de ville" class="lyon-picture">
             <a href="https://maps.app.goo.gl/QRhSEUg9tsU6ucE47" target="_blank">Me rendre aux Terreaux</a>
@@ -82,7 +82,7 @@ require './src/setTime.php';
                 <div>
                     <img src="./assets/images/étoile_7.png" alt="illustration d'une étoile faisant du vélo tirant un soleil souriant dans une charette">
                     <p>12h00</p>
-                    <p>Arrivée prévue au Parc Blandan</p>
+                    <p>Arrivée prévue au <strong>Parc Blandan</strong></p>
                 </div>
             </div>
             <img src="./assets/images/parcblandan_ramparts.webp" alt="photo des ramparts du parc Blandan et son aire de jeux avec des toboggan" class="lyon-picture">

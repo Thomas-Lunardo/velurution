@@ -3,8 +3,7 @@
 :root {
     --backgroundColor: rgba(254, 251, 251, 1);
     --titleColor: rgba(242, 111, 82, 1);
-    --activeColorClass: rgba(114, 90, 143, 1);
-    --hoverColorLink: rgba(0, 180, 96, 1);
+    --activeColorClass: rgb(141, 111, 177);
     --main-font:'Nunito Sans', sans-serif;
     --fontSizeP: 0.9em;
     --boxShadow: 0px 3px 5px 3px rgba(69,69,69,0.59);
@@ -102,6 +101,18 @@ header h1 {
 /* ======== MEDIA QUERIES HEADER DESKTOP ========= */
 
 @media screen and (min-width: 1024px) {
+    header {
+        background-position: center;
+        height: 26vh;
+    }
+
+    header img {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 4em;
+    }
 }
 
 /* =========================================================== */
@@ -127,34 +138,39 @@ nav {
 @media screen and (min-width: 1024px) {
     nav {
         display: block;
-        height: 50px;
-        display: flex;
-        align-items: center;
         background-color: var(--titleColor);
         box-shadow: var(--boxShadow);
     }
 
     nav ul {
         color: var(--titleColor);
+        height: 5vh;
         display: flex;
+        align-items: center;
+        justify-content: space-evenly;
         margin-left: 50px;
     }
 
     nav ul li {
         margin: 0 32px;
+        height: 5vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 30px;
+        transition: background-color 2s;
+        transition: transform 2s;
+    }
+
+    nav ul li:hover {
+        transform: scale(1.1);
+        background-color: var(--activeColorClass);
+        border-radius: var(--borderRadius);
     }
 
     nav ul li a {
-        color: whitesmoke;
-        padding: 15px 40px;
-        font-weight: bold;
-        transition: background-color 0.6s;
-        transition: transform 0.5s;
-    }
-
-    nav ul li a:hover {
-        background-color: var(--hoverColorLink);
-        transform: scale(1.5); 
+        color: var(--backgroundText);
+        font-size: 1.2em;
     }
 
     .active {
@@ -206,6 +222,22 @@ main section a {
         width: 80vw;
         margin: 2vh auto 6vh;
         padding: 20px 0;
+    }
+}
+
+/* === LINKS DESKTOP === */
+
+@media screen and (min-width: 1024px) {
+    main section a {
+        font-size: 1.8em;
+        width: 45vw;
+        margin: 2vh auto 6vh;
+        padding: 20px 0;
+        transition: transform 2s;
+    }
+
+    main section a:hover {
+        transform: scale(1.1);
     }
 }
 
@@ -274,12 +306,8 @@ main section:nth-of-type(1) div:nth-of-type(2) p:first-of-type {
         height: 12vh;
     }
 
-        main section:nth-of-type(1) div:nth-of-type(1) div p:nth-of-type(2) {
-        display: none;
-    }
-
     main section:nth-of-type(1) div:nth-of-type(1) div p:first-of-type {
-        font-size: 1.8em;
+        font-size: 1.7em;
     }
 
     main section:nth-of-type(1) div:nth-of-type(1) div p:nth-of-type(2) {
@@ -296,6 +324,51 @@ main section:nth-of-type(1) div:nth-of-type(2) p:first-of-type {
         letter-spacing: 0.01em;
     }
 }
+
+/* ====== MEDIA QUERIES MAIN FIRST SECTION TABLET DESKTOP ======= */
+
+@media screen and (min-width: 1024px) {
+
+    main section:nth-of-type(1) div:nth-of-type(1) {
+        margin: 32px auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    main section:nth-of-type(1) img {
+        width: 105px;
+        left: -5vw;
+        top: 38vh;
+        position: absolute;
+    }
+
+    main section:nth-of-type(1) div:nth-of-type(1) div {
+        width: 32vw;
+        height: 12vh;
+    }
+
+    main section:nth-of-type(1) div:nth-of-type(1) div p:first-of-type {
+        font-size: 1.7em;
+    }
+
+    main section:nth-of-type(1) div:nth-of-type(1) div p:nth-of-type(2) {
+        display: none;
+    }
+
+    main section:nth-of-type(1) div:nth-of-type(2) {
+        width: 65vw;
+        margin: 0 auto 5vh;
+        font-size: 1.3em;
+    }
+
+    main section:nth-of-type(1) div:nth-of-type(2) p:first-of-type {
+        margin-top: 20px;
+        line-height: 1.9em;
+        letter-spacing: 0.01em;
+    }
+}
+
+/* =========================================================== */
 
 /* ============================================ */
 
@@ -389,6 +462,48 @@ main section:nth-of-type(2) div div p:nth-of-type(2) {
     }
 }
 
+/* ==== MEDIA QUERIES MAIN SECOND SECTION DESKTOP (COUNTDOWN) ==== */
+
+@media screen and (min-width: 1024px) {
+
+    main section:nth-of-type(2) h6{
+        position: relative;
+        left: 0;
+        text-align: center;
+        font-size: 2.5em;
+        margin: 32px 0 5vh;
+    }
+    .countdown-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 50vw;
+        margin: 0 auto;
+    }
+
+    main section:nth-of-type(2) img{
+        width: 100px;
+        position: absolute;
+        left: 85vw;
+        top: 90vh;
+    }
+
+    .countdown-container-unity {
+        width: 65vw;
+        height: 13vh;
+    }
+
+    main section:nth-of-type(2) div div p:nth-of-type(1) {
+        font-size: 1.2em;
+    }
+
+    main section:nth-of-type(2) div div p:nth-of-type(2) {
+        font-size: 3.3em;
+    }
+}
+
+/* =========================================================== */
+
 /* ==================================================== */
 
 /* === THRID SECTION (THIS THE WAY)=== */
@@ -453,6 +568,39 @@ main section:nth-of-type(3) img:nth-of-type(2) {
     
     main section:nth-of-type(3) img:nth-of-type(2) {
         margin: 0 9vw 24px;
+    }
+}
+
+/* ==== MEDIA QUERIES MAIN THIRD SECTION DESKTOP (THIS IS THE WAY) ==== */
+
+@media screen and (min-width: 1024px) {
+
+    main section:nth-of-type(3) h6{
+        font-size: 3em;
+        margin: 32px auto 0;
+    }
+
+    main section:nth-of-type(3) p:nth-of-type(2) {
+        width: 68vw;
+        margin: 2vh auto 5vh;
+        font-size: 1.3em;
+    }
+
+    main section:nth-of-type(3) div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    main section:nth-of-type(3) img:first-of-type {
+        width: 8vw;
+        position: absolute;
+        top: 210vh;
+        left: 10vw;
+    }
+    
+    main section:nth-of-type(3) img:nth-of-type(2) {
+        width: 45vw;
+        margin: 0 auto;
     }
 }
 
@@ -586,6 +734,68 @@ main section:nth-of-type(4) div div p:nth-of-type(2) {
     }
 }
 
+/* ==== MEDIA QUERIES MAIN FOURTH SECTION(ORGANIZATION) DESKTOP ==== */
+
+@media screen and (min-width: 1024px) {
+
+    main section:nth-of-type(4) {
+        width: 80vw;
+        margin: 0 auto;
+    }
+
+    main section:nth-of-type(4) h6{
+        font-size: 3em;
+        margin: 32px auto 6vh;
+    }
+
+    main section:nth-of-type(4) p:nth-of-type(2) {
+        font-size: 1.3em;
+    }
+
+    main section:nth-of-type(4) p:nth-of-type(3) {
+        line-height: 1.9em;
+        letter-spacing: 0.01em;
+        width: 68vw;
+        font-size: 1.3em;
+        margin: 12px auto 24px;
+    }
+
+    .lyon-picture {
+        width: 45vw;
+        margin: 6px auto;
+    }
+
+    .the-way {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 8vw;
+    }
+
+    main section:nth-of-type(4) div div:first-of-type {
+        align-self: flex-start;
+    }
+
+    main section:nth-of-type(4) div div img {
+        width: 8vw;
+    }
+
+    .zig-zag {
+        display: none;
+    }
+
+    .zig-zag-tablel-desktop {
+        display: block;
+        margin: 28vh 0 15vh 2vw;
+        width: 13vw;
+    }
+
+    main section:nth-of-type(4) div div:nth-of-type(2) {
+        align-self: flex-end;
+        width: 15vw;
+    }
+}
+
 /* ==================================================== */
 
 /* === FIFTH SECTION (PARTICIPATION)=== */
@@ -622,7 +832,6 @@ main section:nth-of-type(5) a:first-of-type {
 
     main section:nth-of-type(5) {
         width: 80vw;
-        margin: 0 auto;
     }
 
     main section:nth-of-type(5) h6 {
@@ -631,18 +840,35 @@ main section:nth-of-type(5) a:first-of-type {
     }
 
     main section:nth-of-type(5) p {
-        margin: 12px 2vw 24px;
         line-height: 1.9em;
         letter-spacing: 0.01em;
     }
 }
 
-/* ============================================ */
-
-/* ======== MEDIA QUERIES MAIN DESKTOP ========= */
+/* ==== MEDIA QUERIES MAIN FIFTH SECTION DESKTOP (PARTICIPATION) ==== */
 
 @media screen and (min-width: 1024px) {
+
+    main section:nth-of-type(5) {
+        width: 80vw;
+        margin: 5vh auto 2vh;
+    }
+
+    main section:nth-of-type(5) h6 {
+        font-size: 3em;
+        margin: 8vh auto 6vh;
+    }
+
+    main section:nth-of-type(5) p {
+        line-height: 1.9em;
+        letter-spacing: 0.01em;
+        width: 68vw;
+        font-size: 1.3em;
+        margin: 12px auto 24px;
+    }
 }
+
+/* ============================================ */
 
 /* =========================================================== */
 
@@ -668,6 +894,14 @@ footer {
 /* ======== MEDIA QUERIES FOOTER DESKTOP ========= */
 
 @media screen and (min-width: 1024px) {
+    footer img {
+        width: 4.5vw;
+        transition: transform 2s;
+    }
+
+    footer img:hover {
+        transform: scale(1.1);
+    }
 }
 
 /* =========================================================== */

@@ -58,7 +58,8 @@ $advocacy = [
   <nav>
     <ul>
       <li><a href="./index.php">Accueil</a></li>
-      <li><a href="./advocacy.php" class="active">Plaidoyer</a></li>
+      <li><a href="./sunday.php">Vélorution</a></li>
+      <li  class="active"><a href="./advocacy.php">Plaidoyer</a></li>
     </ul>
   </nav>
   <main>

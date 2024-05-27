@@ -101,7 +101,6 @@ header h1 {
 /* ======== MEDIA QUERIES HEADER DESKTOP ========= */
 
 @media screen and (min-width: 1024px) {
-
     header {
         background-position: center;
         height: 26vh;
@@ -234,6 +233,11 @@ main section a {
         width: 45vw;
         margin: 2vh auto 6vh;
         padding: 20px 0;
+        transition: transform 2s;
+    }
+
+    main section a:hover {
+        transform: scale(1.1);
     }
 }
 
@@ -303,7 +307,7 @@ main section:nth-of-type(1) div:nth-of-type(2) p:first-of-type {
     }
 
     main section:nth-of-type(1) div:nth-of-type(1) div p:first-of-type {
-        font-size: 1.8em;
+        font-size: 1.7em;
     }
 
     main section:nth-of-type(1) div:nth-of-type(1) div p:nth-of-type(2) {
@@ -828,7 +832,6 @@ main section:nth-of-type(5) a:first-of-type {
 
     main section:nth-of-type(5) {
         width: 80vw;
-        margin: 0 auto;
     }
 
     main section:nth-of-type(5) h6 {
@@ -837,18 +840,35 @@ main section:nth-of-type(5) a:first-of-type {
     }
 
     main section:nth-of-type(5) p {
-        margin: 12px 2vw 24px;
         line-height: 1.9em;
         letter-spacing: 0.01em;
     }
 }
 
-/* ============================================ */
-
-/* ======== MEDIA QUERIES MAIN DESKTOP ========= */
+/* ==== MEDIA QUERIES MAIN FIFTH SECTION DESKTOP (PARTICIPATION) ==== */
 
 @media screen and (min-width: 1024px) {
+
+    main section:nth-of-type(5) {
+        width: 80vw;
+        margin: 5vh auto 2vh;
+    }
+
+    main section:nth-of-type(5) h6 {
+        font-size: 3em;
+        margin: 8vh auto 6vh;
+    }
+
+    main section:nth-of-type(5) p {
+        line-height: 1.9em;
+        letter-spacing: 0.01em;
+        width: 68vw;
+        font-size: 1.3em;
+        margin: 12px auto 24px;
+    }
 }
+
+/* ============================================ */
 
 /* =========================================================== */
 
@@ -874,6 +894,14 @@ footer {
 /* ======== MEDIA QUERIES FOOTER DESKTOP ========= */
 
 @media screen and (min-width: 1024px) {
+    footer img {
+        width: 4.5vw;
+        transition: transform 2s;
+    }
+
+    footer img:hover {
+        transform: scale(1.1);
+    }
 }
 
 /* =========================================================== */

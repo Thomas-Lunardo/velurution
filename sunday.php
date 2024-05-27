@@ -20,8 +20,8 @@ require './src/setTime.php';
     <nav>
         <ul>
             <li><a href="./index.php">Accueil</a></li>
+            <li class="active"><a href="./sunday.php">Vélorution</a></li>
             <li><a href="./advocacy.php">Plaidoyer</a></li>
-            <li><a href="./sunday.php" class="active">Vélorution</a></li>
         </ul>
     </nav>
     <main>

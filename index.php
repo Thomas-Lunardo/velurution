@@ -68,8 +68,7 @@ $organisation = [
         <div>
           <h3>Samedi 22 juin 2024</h3>
           <p>
-            Fête des ateliers vélo participatifs, avec des temps pour les
-            enfants
+            Fête des ateliers vélo participatifs
           </p>
         </div>
       </a>

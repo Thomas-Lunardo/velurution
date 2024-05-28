@@ -77,7 +77,7 @@ header div {
     background-color: var(--titleColor);
     box-shadow: var(--boxShadow);
     border-radius: var(--borderRadius);
-    width: 95vw;
+    width: 90vw;
     height: 12vh;
     padding: 5px 18px;
     display: flex;
@@ -102,13 +102,21 @@ header div h3, header div p {
 /* ======== MEDIA QUERIES HEADER TABLET ========= */
 
 @media screen and (min-width: 568px) and (max-width: 1024px) {
-    header section:nth-of-type(2) {
-        display: flex;
-        justify-content: space-around;
+
+    header {
+        text-align: center;
+        margin-bottom: 5vh;
     }
 
-    header article {
-        width: 40%
+    header section:nth-of-type(2) {
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 15vh;
+    }
+
+    header div {
+        width: 40vw;
+        height: 10vh;
     }
 }
 
@@ -234,7 +242,7 @@ main section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 93vw;
+    width: 90vw;
     margin: 0 auto;
 }
 
@@ -265,6 +273,7 @@ main section p {
 main video {
     width: 95vw;
     box-shadow: var(--boxShadow);
+    border-radius: var(--borderRadius);
     margin-bottom: 2vh;
 }
 
@@ -272,7 +281,16 @@ main video {
     font-size: 1.1em;
 }
 
-/* =========================== */
+/* ======== MEDIA QUERIES MAIN FIRST SECTION TABLET ========= */
+
+@media screen and (min-width: 568px) and (max-width: 1024px) {
+
+    main video {
+        width: 75vw;
+    }
+}
+
+/* ====================================================== */
 
 /* === SECOND SECTION (THE TOPIC) */
 
@@ -310,15 +328,22 @@ main a:nth-of-type(2) {
     margin-top: 5vh;
 }
 
-/* ======== MEDIA QUERIES MAIN TABLET ========= */
+/* ======== MEDIA QUERIES SECOND SECTION TABLET ========= */
+
 
 @media screen and (min-width: 568px) and (max-width: 1024px) {
-    main {
-        padding: 0 50px;
+    main section:nth-of-type(2) {
+        width: 75vw;
+        margin: 9vh auto 8vh;
     }
-    main p{
-        letter-spacing: 0.09em;
-        line-height: 2ch;
+
+    main section div:first-child p {
+        margin: 3vh 18vw;
+        text-align: center;
+    }
+
+    main a {
+        margin: 3vh auto 4vh;
     }
 }
 
@@ -446,8 +471,8 @@ footer a img {
 /* ======== MEDIA QUERIES FOOTER TABLET ========= */
 
 @media screen and (min-width: 568px) and (max-width: 1024px) {
-    footer section {
-        width: 100vw;
+
+    footer section:nth-of-type(2) {
         display: grid;
         grid-template-columns: repeat(2, 50vw);
         text-align: center;
@@ -458,8 +483,15 @@ footer a img {
         width: 25vw;
     }
 
-    footer img {
+    .second-logo, .third-logo, .fourth-logo, .fitfh-logo, .sixth-logo, .seventh-logo {
         width: 40vw;
+        margin: 2vh auto;
+    }
+
+    /* ===================== */
+
+    footer a img {
+        width: 10vw;
     }
 }
 

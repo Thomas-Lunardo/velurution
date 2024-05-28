@@ -11,37 +11,37 @@ $organisation = [
     'link' => 'https://www.maisonduvelolyon.org/',
     'src' => './assets/logos/maison_du_vélo_lyon.webp',
     'alt' => 'logo de l\'association Greenpeace',
-    'class' => '',
+    'class' => 'second-logo',
   ],
   [
     'link' => 'https://www.greenpeace.fr/',
     'src' => './assets/logos/Greenpeace_logo.webp',
     'alt' => 'logo de l\'association Greenpeace',
-    'class' => '',
+    'class' => 'third-logo',
   ],
   [
     'link' => 'https://cleancitiescampaign.org/',
     'src' => './assets/logos/Clean-Cities.webp',
     'alt' => 'logo de l\'association Clean-Cities',
-    'class' => '',
+    'class' => 'fourth-logo',
   ],
   [
     'link' => 'https://rhone.alternatiba.eu/',
     'src' => './assets/logos/alternatiba_rhone.webp',
     'alt' => 'logo de l\'association Alternatiba',
-    'class' => '',
+    'class' => 'fitfh-logo',
   ],
   [
     'link' => 'https://clavette-lyon.heureux-cyclage.org',
     'src' => './assets/logos/clavette_lyonaise.webp',
     'alt' => 'logo de l\'association Clavette',
-    'class' => '',
+    'class' => 'sixth-logo',
   ],
   [
     'link' => 'https://lavilleavelo.org/',
     'src' => './assets/logos/la_ville_à_vélo.webp',
     'alt' => 'logo de l\'association La ville à vélo',
-    'class' => '',
+    'class' => 'seventh-logo',
   ],
 ];
 
@@ -58,28 +58,27 @@ $organisation = [
 </head>
 
 <body>
-  <header>
+  <header id="up">
     <section>
       <h1>Quartiers libres #2</h1>
       <img src="./assets/images/quartiers_libres_2.webp" alt="photo d'enfant faisant du vélo avec titre quartiers libres #2 en haut de la photo" />
     </section>
-    <picture>
-      <img src="./assets/icones/calendar.png" alt="icone d'un calendrier" />
-    </picture>
     <section>
-      <article>
-        <h3>Samedi 22 juin 2024</h3>
-        <p>
-          Fête des ateliers vélo participatifs, avec des temps pour les
-          enfants
-        </p>
-      </article>
-      <article>
-        <a href="./sunday.php">
+      <a href="https://clavette-lyon.heureux-cyclage.org/index.php/2024/01/24/samedi-22-juin-2024-fete-des-ateliers-velo-participatifs/" target="_blank">
+        <div>
+          <h3>Samedi 22 juin 2024</h3>
+          <p>
+            Fête des ateliers vélo participatifs, avec des temps pour les
+            enfants
+          </p>
+        </div>
+      </a>
+      <a href="./sunday.php">
+        <div>
           <h3>Dimanche 23 juin 2024</h3>
           <p>Vélorution enfants</p>
-        </a>
-      </article>
+        </div>
+      </a>
     </section>
   </header>
   <nav>
@@ -90,12 +89,18 @@ $organisation = [
     </ul>
   </nav>
   <main>
-    <section>
-      <img src="./assets/icones/bike.png" alt="icone d'un vélocycliste" />
-      <h2>Viva la vélorution !</h2>
-      <p>Favorisons la mobilité des enfants dans le Grand Lyon !</p>
+    <section class="video-container">
+      <video controls controlslist="nodownload" class="video-presentation">
+        <source src="./assets/videos/velorution-fisrt-edition.mp4" type="video/mp4">
+      </video>
+      <i>Quartiers Libres #1</i>
     </section>
     <section>
+      <div>
+        <img src="./assets/images/étoile_5.png" alt="illustration de deux étoiles faisant du tandem">
+        <h2>Viva la vélorution !</h2>
+        <p>Favorisons la mobilité des enfants dans le Grand Lyon !</p>
+      </div>
       <div>
         <p>
           Les 22 et 23 juin, plusieurs associations lyonnaises organisent la
@@ -114,9 +119,7 @@ $organisation = [
           le déploiement de politiques permettant de développer les mobilités
           actives de tous les enfants
         </p>
-        <div class="advocacay-cat">
-          <a href="advocacy.php">Plaidoyer</a>
-        </div>
+        <a href="advocacy.php">Plaidoyer</a>
         <p>
           Pour Clément Drognat Landré de La Rue Est À Nous, “il est urgent de
           rééquilibrer le partage de l’espace public en faveur des enfants et
@@ -124,8 +127,6 @@ $organisation = [
           sein des blocs d’habitations, apaiser les quartiers résidentiels et
           créer des rues scolaires sur tout le territoire de la Métropole !”.
         </p>
-      </div>
-      <div>
         <p>
           Dans l’ensemble, les associations demandent une action plus forte
           des communes pour accompagner les mobilités des enfants et des
@@ -144,17 +145,22 @@ $organisation = [
           collège, prendre en compte les accompagnants adultes… et aussi aider
           les familles précaires à se doter des équipements nécessaires !”
         </p>
+        <a href="./assets/images/flyer_vélorution.jpg" download="flyer-vélorution.jpg">Télécharger le Flyer</a>
       </div>
     </section>
   </main>
   <footer>
-    <h2>Associations partenaires</h2>
+    <section>
+      <img src="./assets/images/étoile_7.png" alt="illustration d'une étoile faisant du vélo tirant un soleil souriant dans une charette">
+      <h2>Associations partenaires</h2>
+    </section>
     <section>
       <?php foreach ($organisation as $key => $value) { ?>
         <a href="<?php echo $value['link'] ?>" target="_blank">
           <img src="<?php echo $value['src'] ?>" alt="<?php echo $value['alt'] ?>" class="<?php echo $value['class'] ?>" /></a>
       <?php } ?>
     </section>
+    <a href="#up"><img src="./assets/icones/chevron_purple_up.png" alt="chevron violet qui vous ramène en haut de page"></a>
   </footer>
 </body>
 

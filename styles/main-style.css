@@ -227,20 +227,53 @@ nav {
 
 /* =========================================== */
 
-
-
 /* ======================= MAIN ============================== */
 
-main section {
-    text-align: center;
-    margin: 24px 16px;
+/* ===== ALL SECTIONS ======== */
+
+main section p {
+    margin: 16px 8px;
+    text-align: start;
+    letter-spacing: var(--letterSpacingP);
+    line-height: var(--lineHeightP);
 }
 
-main section:nth-of-type(1) h2 {
+/* =========================== */
+
+/* === FIRST SECTION (VIDEO) */
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95vw;
+    margin: 0 auto;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3vh;
+}
+
+main video {
+    width: 95vw;
+    box-shadow: var(--boxShadow);
+    margin-bottom: 2vh;
+}
+
+.video-container i {
+    font-size: 1.1em;
+}
+
+/* === SECOND SECTION (THE TOPIC) */
+
+main section:nth-of-type(2) h2 {
     margin-top: 32px;
 }
 
-main section:nth-of-type(1) p:nth-of-type(1) {
+main section:nth-of-type(2) p:nth-of-type(2) {
     margin: 24px 0 40px;
     text-align: center;
     padding: 0 70px;
@@ -248,13 +281,6 @@ main section:nth-of-type(1) p:nth-of-type(1) {
 
 main section:nth-of-type(2) p:nth-of-type(1) {
     margin-top: 24px;
-}
-
-main section p {
-    margin: 16px 8px;
-    text-align: start;
-    letter-spacing: var(--letterSpacingP);
-    line-height: var(--lineHeightP);
 }
 
 .advocacay-cat {

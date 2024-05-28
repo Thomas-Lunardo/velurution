@@ -89,12 +89,15 @@ $organisation = [
     </ul>
   </nav>
   <main>
-    <section>
-      <img src="./assets/icones/bike.png" alt="icone d'un vélocycliste" />
-      <h2>Viva la vélorution !</h2>
-      <p>Favorisons la mobilité des enfants dans le Grand Lyon !</p>
+    <section class="video-container">
+      <video controls controlslist="nodownload" class="video-presentation">
+        <source src="./assets/videos/velorution-fisrt-edition.mp4" type="video/mp4">
+      </video>
+      <i>Quartiers Libres #1</i>
     </section>
     <section>
+      <h2>Viva la vélorution !</h2>
+      <p>Favorisons la mobilité des enfants dans le Grand Lyon !</p>
       <div>
         <p>
           Les 22 et 23 juin, plusieurs associations lyonnaises organisent la

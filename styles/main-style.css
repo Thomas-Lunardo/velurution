@@ -103,12 +103,14 @@ header div h3, header div p {
 
 @media screen and (min-width: 568px) and (max-width: 1024px) {
     header section:nth-of-type(2) {
-        display: flex;
-        justify-content: space-around;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 15vh;
     }
 
-    header article {
-        width: 40%
+    header div {
+        width: 40vw;
+        height: 10vh;
     }
 }
 
@@ -446,7 +448,7 @@ footer a img {
 /* ======== MEDIA QUERIES FOOTER TABLET ========= */
 
 @media screen and (min-width: 568px) and (max-width: 1024px) {
-    footer section {
+    footer section:nth-of-type(2) {
         width: 100vw;
         display: grid;
         grid-template-columns: repeat(2, 50vw);
@@ -458,8 +460,9 @@ footer a img {
         width: 25vw;
     }
 
-    footer img {
+    .second-logo, .third-logo, .fourth-logo, .fitfh-logo, .sixth-logo, .seventh-logo {
         width: 40vw;
+        margin: 2vh auto;
     }
 }
 

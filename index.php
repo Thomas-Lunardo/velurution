@@ -11,37 +11,37 @@ $organisation = [
     'link' => 'https://www.maisonduvelolyon.org/',
     'src' => './assets/logos/maison_du_vélo_lyon.webp',
     'alt' => 'logo de l\'association Greenpeace',
-    'class' => '',
+    'class' => 'second-logo',
   ],
   [
     'link' => 'https://www.greenpeace.fr/',
     'src' => './assets/logos/Greenpeace_logo.webp',
     'alt' => 'logo de l\'association Greenpeace',
-    'class' => '',
+    'class' => 'third-logo',
   ],
   [
     'link' => 'https://cleancitiescampaign.org/',
     'src' => './assets/logos/Clean-Cities.webp',
     'alt' => 'logo de l\'association Clean-Cities',
-    'class' => '',
+    'class' => 'fourth-logo',
   ],
   [
     'link' => 'https://rhone.alternatiba.eu/',
     'src' => './assets/logos/alternatiba_rhone.webp',
     'alt' => 'logo de l\'association Alternatiba',
-    'class' => '',
+    'class' => 'fitfh-logo',
   ],
   [
     'link' => 'https://clavette-lyon.heureux-cyclage.org',
     'src' => './assets/logos/clavette_lyonaise.webp',
     'alt' => 'logo de l\'association Clavette',
-    'class' => '',
+    'class' => 'sixth-logo',
   ],
   [
     'link' => 'https://lavilleavelo.org/',
     'src' => './assets/logos/la_ville_à_vélo.webp',
     'alt' => 'logo de l\'association La ville à vélo',
-    'class' => '',
+    'class' => 'seventh-logo',
   ],
 ];
 
@@ -58,7 +58,7 @@ $organisation = [
 </head>
 
 <body>
-  <header>
+  <header id="up">
     <section>
       <h1>Quartiers libres #2</h1>
       <img src="./assets/images/quartiers_libres_2.webp" alt="photo d'enfant faisant du vélo avec titre quartiers libres #2 en haut de la photo" />
@@ -145,18 +145,22 @@ $organisation = [
           collège, prendre en compte les accompagnants adultes… et aussi aider
           les familles précaires à se doter des équipements nécessaires !”
         </p>
-        <a href="./assets/images/flyer_vélorution.jpg" download="flyer-vélorution.jpg">Flyer</a>
+        <a href="./assets/images/flyer_vélorution.jpg" download="flyer-vélorution.jpg">Télécharger le Flyer</a>
       </div>
     </section>
   </main>
   <footer>
-    <h2>Associations partenaires</h2>
+    <section>
+      <img src="./assets/images/étoile_7.png" alt="illustration d'une étoile faisant du vélo tirant un soleil souriant dans une charette">
+      <h2>Associations partenaires</h2>
+    </section>
     <section>
       <?php foreach ($organisation as $key => $value) { ?>
         <a href="<?php echo $value['link'] ?>" target="_blank">
           <img src="<?php echo $value['src'] ?>" alt="<?php echo $value['alt'] ?>" class="<?php echo $value['class'] ?>" /></a>
       <?php } ?>
     </section>
+    <a href="#up"><img src="./assets/icones/chevron_purple_up.png" alt="chevron violet qui vous ramène en haut de page"></a>
   </footer>
 </body>
 

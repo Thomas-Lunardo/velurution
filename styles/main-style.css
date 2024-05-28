@@ -6,8 +6,7 @@
     --activeColorClass: rgb(141, 111, 177);
     --main-font:'Nunito Sans', sans-serif;
     --fontSizeP: 0.9em;
-    --boxShadow: 0px 3px 5px 3px rgba(69,69,69,0.59);
-    --textShadow: -1px 4px 4px rgba(15,7,4,0.41);
+    --boxShadow: 0px 4px 4px 0px rgba(69,69,69,0.59);
     --backgroundText: rgba(249, 246, 246, 1);
     --lineHeightP: 1.3em;
     --letterSpacingP: 0.03em;
@@ -235,8 +234,14 @@ main section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 95vw;
+    width: 93vw;
     margin: 0 auto;
+}
+
+main section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 main section p {
@@ -267,21 +272,21 @@ main video {
     font-size: 1.1em;
 }
 
+/* =========================== */
+
 /* === SECOND SECTION (THE TOPIC) */
 
-main section div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+main section:nth-of-type(2) {
+    margin: 9vh auto 8vh;
 }
 
 main section:nth-of-type(2) img {
     width: 20vw;
-    margin-top: 5vh;
 }
 
 main section:nth-of-type(2) h2 {
     margin-top: 18px;
+    font-weight: lighter;
 }
 
 main section div:first-child p {
@@ -303,10 +308,6 @@ main a {
 
 main a:nth-of-type(2) {
     margin-top: 5vh;
-}
-
-main section div:nth-of-type(2) {
-    margin-bottom: 8vh;
 }
 
 /* ======== MEDIA QUERIES MAIN TABLET ========= */
@@ -381,15 +382,14 @@ main section div:nth-of-type(2) {
 
 /* ======================= FOOTER ============================== */
 
-footer {
-    width: 100vw;
-    margin-bottom: 24px;
-}
+/* === ALL === */
 
-footer h2 {
-    text-align: center;
-    text-shadow: var(--textShadow);
-    margin: 60px 0 40px;
+footer {
+    width: 95vw;
+    margin: 12vh auto 4vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 footer section {
@@ -399,15 +399,48 @@ footer section {
     flex-direction: column;
 }
 
-.first-logo{
-    width: 65vw;
+/* ===================== */
+
+/* === FIRST SECTION === */
+
+footer section:nth-of-type(1) img {
+    width: 25vw;
 }
 
-footer img {
-    width: 85vw;
+footer h2 {
+    font-size: 1.5em;
+    margin: 3vh 0 40px;
+    text-align: center;
+}
+
+/* ====================== */
+
+/* === SECOND SECTION === */
+
+footer section:nth-of-type(2) img {
     border-radius: 4px;
     box-shadow: var(--boxShadow);
-    margin: 12px 0;
+}
+
+.first-logo {
+    width: 60vw;
+    margin: 1vh auto 2vh;
+}
+
+.second-logo, .third-logo, .fourth-logo, .fitfh-logo, .sixth-logo, .seventh-logo {
+    width: 80vw;
+    margin: 2vh auto;
+}
+
+.third-logo, .sixth-logo, .seventh-logo {
+    padding: 3vw;
+}
+
+/* ===================== */
+
+footer a img {
+    width: 15vw;
+    margin-top: 12vh;
 }
 
 /* ======== MEDIA QUERIES FOOTER TABLET ========= */

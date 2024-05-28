@@ -63,23 +63,22 @@ $organisation = [
       <h1>Quartiers libres #2</h1>
       <img src="./assets/images/quartiers_libres_2.webp" alt="photo d'enfant faisant du vélo avec titre quartiers libres #2 en haut de la photo" />
     </section>
-    <picture>
-      <img src="./assets/icones/calendar.png" alt="icone d'un calendrier" />
-    </picture>
     <section>
-      <article>
-        <h3>Samedi 22 juin 2024</h3>
-        <p>
-          Fête des ateliers vélo participatifs, avec des temps pour les
-          enfants
-        </p>
-      </article>
-      <article>
-        <a href="./sunday.php">
+      <a href="https://clavette-lyon.heureux-cyclage.org/index.php/2024/01/24/samedi-22-juin-2024-fete-des-ateliers-velo-participatifs/" target="_blank">
+        <div>
+          <h3>Samedi 22 juin 2024</h3>
+          <p>
+            Fête des ateliers vélo participatifs, avec des temps pour les
+            enfants
+          </p>
+        </div>
+      </a>
+      <a href="./sunday.php">
+        <div>
           <h3>Dimanche 23 juin 2024</h3>
           <p>Vélorution enfants</p>
-        </a>
-      </article>
+        </div>
+      </a>
     </section>
   </header>
   <nav>

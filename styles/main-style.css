@@ -52,36 +52,53 @@ header {
     margin-bottom: 32px;
 }
 
+/* FIRST SECTION */
+
 header h1 {
     display: none;
 }
 
 header section:nth-of-type(1) img {
-    width: 100%;
+    width: 100vw;
 }
 
-header picture img {
-    width: 12%;
-    margin-top: 40px;
+/* ============= */
+
+/* SECOND SECTION */
+
+header section:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 35vh;
+}
+
+header div {
+    background-color: var(--titleColor);
+    box-shadow: var(--boxShadow);
+    border-radius: var(--borderRadius);
+    width: 95vw;
+    height: 12vh;
+    padding: 5px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+header h3 {
+    font-size: 1.3em;
 }
 
 header p {
-    margin: 16px 0;
-    padding: 0 48px;
+    font-size: 1.2em;
 }
 
-header section:nth-of-type(2) {
-    text-align: center;
-    margin: 24px 16px;
+header div h3, header div p {
+    color: var(--backgroundText);
 }
 
-article {
-    background-color: whitesmoke;
-    box-shadow: var(--boxShadow);
-    border-radius: 12px;
-    padding: 8px 12px;
-    margin: 16px 0;
-}
+/* ================ */
 
 /* ======== MEDIA QUERIES HEADER TABLET ========= */
 

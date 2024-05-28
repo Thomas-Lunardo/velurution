@@ -96,8 +96,11 @@ $organisation = [
       <i>Quartiers Libres #1</i>
     </section>
     <section>
-      <h2>Viva la vélorution !</h2>
-      <p>Favorisons la mobilité des enfants dans le Grand Lyon !</p>
+      <div>
+        <img src="./assets/images/étoile_5.png" alt="illustration de deux étoiles faisant du tandem">
+        <h2>Viva la vélorution !</h2>
+        <p>Favorisons la mobilité des enfants dans le Grand Lyon !</p>
+      </div>
       <div>
         <p>
           Les 22 et 23 juin, plusieurs associations lyonnaises organisent la
@@ -116,9 +119,7 @@ $organisation = [
           le déploiement de politiques permettant de développer les mobilités
           actives de tous les enfants
         </p>
-        <div class="advocacay-cat">
-          <a href="advocacy.php">Plaidoyer</a>
-        </div>
+        <a href="advocacy.php">Plaidoyer</a>
         <p>
           Pour Clément Drognat Landré de La Rue Est À Nous, “il est urgent de
           rééquilibrer le partage de l’espace public en faveur des enfants et
@@ -126,8 +127,6 @@ $organisation = [
           sein des blocs d’habitations, apaiser les quartiers résidentiels et
           créer des rues scolaires sur tout le territoire de la Métropole !”.
         </p>
-      </div>
-      <div>
         <p>
           Dans l’ensemble, les associations demandent une action plus forte
           des communes pour accompagner les mobilités des enfants et des
@@ -146,6 +145,7 @@ $organisation = [
           collège, prendre en compte les accompagnants adultes… et aussi aider
           les familles précaires à se doter des équipements nécessaires !”
         </p>
+        <a href="./assets/images/flyer_vélorution.jpg" download="flyer-vélorution.jpg">Flyer</a>
       </div>
     </section>
   </main>

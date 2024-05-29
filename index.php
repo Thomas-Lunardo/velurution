@@ -1,5 +1,36 @@
 <?php
 
+$stars = [
+  [
+    'picture' => './assets/images/étoile_1.png',
+    'alt' => 'illustration d\'une étoile jaune faisant du vélo',
+  ],
+  [
+    'picture' => './assets/images/étoile_2.png',
+    'alt' => 'illustration d\'une étoile verte faisant du monocycle',
+  ],
+  [
+    'picture' => './assets/images/étoile_3.png',
+    'alt' => 'illustration d\'une étoile verte faisant avec dans le panier avant, un rond rouge souriant',
+  ],
+  [
+    'picture' => './assets/images/étoile_4.png',
+    'alt' => 'illustration d\'une étoile violette faisant de la trotinette',
+  ],
+  [
+    'picture' => './assets/images/étoile_5.png',
+    'alt' => 'illustration de deux étoiles souriante faisant du tandem',
+  ],
+  [
+    'picture' => './assets/images/étoile_6.png',
+    'alt' => 'illustration d\'une étoile rouge faisant de la rosalie',
+  ],
+  [
+    'picture' => './assets/images/étoile_7.png',
+    'alt' => 'illustration d\'une étoile bleue faisant du vélo tirant un soleil souriant dans une charette',
+  ],
+];
+
 $organisation = [
   [
     'link' => 'https://larueestanouslyon.fr/accueil',
@@ -89,11 +120,12 @@ $organisation = [
   </nav>
   <main>
     <section class="video-container">
-      <img src="" alt="">
+    <img src="<?php echo $stars[0]['picture'] ?>" alt="<?php echo $stars[0]['alt'] ?>">
       <video controls controlslist="nodownload" class="video-presentation">
         <source src="./assets/videos/velorution-fisrt-edition.mp4" type="video/mp4">
       </video>
       <i>Quartiers Libres #1</i>
+      <img src="<?php echo $stars[5]['picture'] ?>" alt="<?php echo $stars[5]['alt'] ?>">
     </section>
     <section>
       <div>

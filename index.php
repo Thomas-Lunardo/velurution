@@ -89,6 +89,7 @@ $organisation = [
   </nav>
   <main>
     <section class="video-container">
+      <img src="" alt="">
       <video controls controlslist="nodownload" class="video-presentation">
         <source src="./assets/videos/velorution-fisrt-edition.mp4" type="video/mp4">
       </video>

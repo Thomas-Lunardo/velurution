@@ -185,7 +185,7 @@ $organisation = [
   </main>
   <footer>
     <section>
-      <img src="./assets/images/étoile_7.png" alt="illustration d'une étoile faisant du vélo tirant un soleil souriant dans une charette">
+      <img src="<?php echo $stars[6]['picture'] ?>" alt="<?php echo $stars[6]['alt'] ?>">
       <h2>Associations partenaires</h2>
     </section>
     <section>

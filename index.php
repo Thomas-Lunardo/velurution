@@ -120,16 +120,18 @@ $organisation = [
   </nav>
   <main>
     <section class="video-container">
-    <img src="<?php echo $stars[0]['picture'] ?>" alt="<?php echo $stars[0]['alt'] ?>">
-      <video controls controlslist="nodownload" class="video-presentation">
-        <source src="./assets/videos/velorution-fisrt-edition.mp4" type="video/mp4">
-      </video>
-      <i>Quartiers Libres #1</i>
+      <img src="<?php echo $stars[2]['picture'] ?>" alt="<?php echo $stars[2]['alt'] ?>">
+      <div>
+        <video controls controlslist="nodownload" class="video-presentation">
+          <source src="./assets/videos/velorution-fisrt-edition.mp4" type="video/mp4">
+        </video>
+        <i>Quartiers Libres #1</i>
+      </div>
       <img src="<?php echo $stars[5]['picture'] ?>" alt="<?php echo $stars[5]['alt'] ?>">
     </section>
     <section>
       <div>
-        <img src="./assets/images/étoile_5.png" alt="illustration de deux étoiles faisant du tandem">
+        <img src="<?php echo $stars[4]['picture'] ?>" alt="<?php echo $stars[5]['alt'] ?>">
         <h2>Viva la vélorution !</h2>
         <p>Favorisons la mobilité des enfants dans le Grand Lyon !</p>
       </div>

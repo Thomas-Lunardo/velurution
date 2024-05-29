@@ -287,12 +287,46 @@ main video {
     font-size: 1.1em;
 }
 
-/* ======== MEDIA QUERIES MAIN FIRST SECTION TABLET ========= */
+/* ====== MEDIA QUERIES MAIN FIRST SECTION TABLET (VIDEO) ====== */
 
 @media screen and (min-width: 568px) and (max-width: 1024px) {
-
     main video {
         width: 75vw;
+    }
+}
+
+/* ====================================================== */
+
+/* ====== MEDIA QUERIES MAIN FIRST SECTION DESKTOP (VIDEO) ====== */
+
+@media screen and (min-width: 1024px){
+    .video-container {
+        flex-direction: row;
+        align-items: center;
+        margin: 3vh auto 5vh;
+    }
+
+    .video-container img {
+        width: 6vw;
+    }
+    
+    .video-container img:nth-of-type(1) {
+        margin-top: 35vh;
+    }
+
+    main video {
+        width: 50vw;
+        box-shadow: var(--boxShadow);
+        border-radius: var(--borderRadius);
+        margin-bottom: 2vh;
+    }
+    
+    .video-container i {
+        font-size: 1.3em;
+    }
+
+    .video-container img:nth-of-type(2) {
+        margin-bottom: 35vh;
     }
 }
 
@@ -334,8 +368,7 @@ main a:nth-of-type(2) {
     margin-top: 5vh;
 }
 
-/* ======== MEDIA QUERIES SECOND SECTION TABLET ========= */
-
+/* ======= MEDIA QUERIES SECOND SECTION TABLET (THE TOPIC) ======= */
 
 @media screen and (min-width: 568px) and (max-width: 1024px) {
     main section:nth-of-type(2) {
@@ -353,20 +386,11 @@ main a:nth-of-type(2) {
     }
 }
 
-/* ============================================ */
+/* =========================================================== */
 
-/* ======== MEDIA QUERIES MAIN DESKTOP ========= */
+/* ======= MEDIA QUERIES SECOND SECTION DESKTOP (THE TOPIC) ======= */
 
 @media screen and (min-width: 1024px){
-    main {
-        margin: 24px auto;
-        padding: 0 50px;
-    }
-
-    main section:nth-of-type(1) {
-        margin: 60px 0 0;
-    }
-
     main h2 {
         font-size: xx-large;
         margin: 12px 0 40px;
@@ -402,10 +426,6 @@ main a:nth-of-type(2) {
 
     .advocacay-cat:hover {
         transform: scale(1.1);
-    }
-
-    main section img:nth-of-type(1) {
-        display: none;
     }
 }
 

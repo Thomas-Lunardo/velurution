@@ -159,7 +159,9 @@ $organisation = [
           <img src="<?php echo $value['src'] ?>" alt="<?php echo $value['alt'] ?>" class="<?php echo $value['class'] ?>" /></a>
       <?php } ?>
     </section>
-    <a href="#up"><img src="./assets/icones/chevron_purple_up.png" alt="chevron violet qui vous ramène en haut de page"></a>
+    <section>
+      <a href="#up"><img src="./assets/icones/chevron_purple_up.png" alt="chevron violet qui vous ramène en haut de page"></a>
+    </section>
   </footer>
 </body>
 

@@ -151,7 +151,7 @@ $organisation = [
         <p>
           A l’occasion de cet événement, les associations entendent demander
           le déploiement de politiques permettant de développer les mobilités
-          actives de tous les enfants
+          actives de tous les enfants.
         </p>
         <a href="advocacy.php">Plaidoyer</a>
         <p>

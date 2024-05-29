@@ -1,5 +1,36 @@
 <?php
 
+$stars = [
+  [
+    'picture' => './assets/images/étoile_1.png',
+    'alt' => 'illustration d\'une étoile jaune faisant du vélo',
+  ],
+  [
+    'picture' => './assets/images/étoile_2.png',
+    'alt' => 'illustration d\'une étoile verte faisant du monocycle',
+  ],
+  [
+    'picture' => './assets/images/étoile_3.png',
+    'alt' => 'illustration d\'une étoile verte faisant avec dans le panier avant, un rond rouge souriant',
+  ],
+  [
+    'picture' => './assets/images/étoile_4.png',
+    'alt' => 'illustration d\'une étoile violette faisant de la trotinette',
+  ],
+  [
+    'picture' => './assets/images/étoile_5.png',
+    'alt' => 'illustration de deux étoiles souriante faisant du tandem',
+  ],
+  [
+    'picture' => './assets/images/étoile_6.png',
+    'alt' => 'illustration d\'une étoile rouge faisant de la rosalie',
+  ],
+  [
+    'picture' => './assets/images/étoile_7.png',
+    'alt' => 'illustration d\'une étoile bleue faisant du vélo tirant un soleil souriant dans une charette',
+  ],
+];
+
 $organisation = [
   [
     'link' => 'https://larueestanouslyon.fr/accueil',
@@ -68,8 +99,7 @@ $organisation = [
         <div>
           <h3>Samedi 22 juin 2024</h3>
           <p>
-            Fête des ateliers vélo participatifs, avec des temps pour les
-            enfants
+            Fête des ateliers vélo participatifs
           </p>
         </div>
       </a>
@@ -90,14 +120,18 @@ $organisation = [
   </nav>
   <main>
     <section class="video-container">
-      <video controls controlslist="nodownload" class="video-presentation">
-        <source src="./assets/videos/velorution-fisrt-edition.mp4" type="video/mp4">
-      </video>
-      <i>Quartiers Libres #1</i>
+      <img src="<?php echo $stars[2]['picture'] ?>" alt="<?php echo $stars[2]['alt'] ?>">
+      <div>
+        <video controls controlslist="nodownload" class="video-presentation">
+          <source src="./assets/videos/velorution-fisrt-edition.mp4" type="video/mp4">
+        </video>
+        <i>Quartiers Libres #1</i>
+      </div>
+      <img src="<?php echo $stars[5]['picture'] ?>" alt="<?php echo $stars[5]['alt'] ?>">
     </section>
     <section>
       <div>
-        <img src="./assets/images/étoile_5.png" alt="illustration de deux étoiles faisant du tandem">
+        <img src="<?php echo $stars[4]['picture'] ?>" alt="<?php echo $stars[5]['alt'] ?>">
         <h2>Viva la vélorution !</h2>
         <p>Favorisons la mobilité des enfants dans le Grand Lyon !</p>
       </div>
@@ -117,7 +151,7 @@ $organisation = [
         <p>
           A l’occasion de cet événement, les associations entendent demander
           le déploiement de politiques permettant de développer les mobilités
-          actives de tous les enfants
+          actives de tous les enfants.
         </p>
         <a href="advocacy.php">Plaidoyer</a>
         <p>
@@ -151,7 +185,7 @@ $organisation = [
   </main>
   <footer>
     <section>
-      <img src="./assets/images/étoile_7.png" alt="illustration d'une étoile faisant du vélo tirant un soleil souriant dans une charette">
+      <img src="<?php echo $stars[6]['picture'] ?>" alt="<?php echo $stars[6]['alt'] ?>">
       <h2>Associations partenaires</h2>
     </section>
     <section>
@@ -160,7 +194,9 @@ $organisation = [
           <img src="<?php echo $value['src'] ?>" alt="<?php echo $value['alt'] ?>" class="<?php echo $value['class'] ?>" /></a>
       <?php } ?>
     </section>
-    <a href="#up"><img src="./assets/icones/chevron_purple_up.png" alt="chevron violet qui vous ramène en haut de page"></a>
+    <section>
+      <a href="#up"><img src="./assets/icones/chevron_purple_up.png" alt="chevron violet qui vous ramène en haut de page"></a>
+    </section>
   </footer>
 </body>
 

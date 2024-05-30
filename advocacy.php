@@ -75,7 +75,7 @@ $advocacy = [
     <div class="advocacy-grid">
       <?php foreach ($advocacy as $key => $value) { ?>
         <article>
-          <img src="<?php echo $value['star'] ?>" alt="<?php echo $value['alt'] ?>">
+          <img src="<?php echo $value['star'] ?>" alt="<?php echo $value['alt'] ?>" loading="lazy">
           <h4><?php echo $value['title'] ?></h4>
           <p><?php echo $value['argument'] ?></p>
         </article>

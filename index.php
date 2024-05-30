@@ -120,18 +120,18 @@ $organisation = [
   </nav>
   <main>
     <section class="video-container">
-      <img src="<?php echo $stars[2]['picture'] ?>" alt="<?php echo $stars[2]['alt'] ?>">
+      <img src="<?php echo $stars[2]['picture'] ?>" alt="<?php echo $stars[2]['alt'] ?>" loading="lazy">
       <div>
         <video controls controlslist="nodownload">
           <source src="./assets/videos/velorution-fisrt-edition.mp4" type="video/mp4">
         </video>
         <i>Quartiers Libres #1</i>
       </div>
-      <img src="<?php echo $stars[5]['picture'] ?>" alt="<?php echo $stars[5]['alt'] ?>">
+      <img src="<?php echo $stars[5]['picture'] ?>" alt="<?php echo $stars[5]['alt'] ?>" loading="lazy">
     </section>
     <section>
       <div>
-        <img src="<?php echo $stars[4]['picture'] ?>" alt="<?php echo $stars[5]['alt'] ?>">
+        <img src="<?php echo $stars[4]['picture'] ?>" alt="<?php echo $stars[5]['alt'] ?>" loading="lazy">
         <h2>Viva la vélorution !</h2>
         <p>Favorisons la mobilité des enfants dans le Grand Lyon !</p>
       </div>
@@ -185,13 +185,13 @@ $organisation = [
   </main>
   <footer>
     <section>
-      <img src="<?php echo $stars[6]['picture'] ?>" alt="<?php echo $stars[6]['alt'] ?>">
+      <img src="<?php echo $stars[6]['picture'] ?>" alt="<?php echo $stars[6]['alt'] ?>" loading="lazy">
       <h2>Associations partenaires</h2>
     </section>
     <section>
       <?php foreach ($organisation as $key => $value) { ?>
         <a href="<?php echo $value['link'] ?>" target="_blank">
-          <img src="<?php echo $value['src'] ?>" alt="<?php echo $value['alt'] ?>" class="<?php echo $value['class'] ?>" /></a>
+          <img src="<?php echo $value['src'] ?>" alt="<?php echo $value['alt'] ?>" class="<?php echo $value['class'] ?>" loading="lazy"/></a>
       <?php } ?>
     </section>
     <section>

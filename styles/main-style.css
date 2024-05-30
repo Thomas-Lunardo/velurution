@@ -510,17 +510,17 @@ footer section:nth-of-type(2) img {
     box-shadow: var(--boxShadow);
 }
 
-.first-logo {
-    width: 60vw;
+.first-logo, .fourth-logo {
+    width: 50vw;
     margin: 1vh auto 2vh;
 }
 
-.second-logo, .third-logo, .fourth-logo, .fitfh-logo, .sixth-logo, .seventh-logo {
+.second-logo, .third-logo, .fifth-logo, .sixth-logo, .seventh-logo {
     width: 80vw;
     margin: 2vh auto;
 }
 
-.third-logo, .sixth-logo, .seventh-logo {
+.third-logo, .fourth-logo, .sixth-logo, .seventh-logo {
     padding: 3vw;
 }
 
@@ -542,11 +542,11 @@ footer a img {
         flex-wrap: wrap;
     }
 
-    .first-logo {
+    .first-logo, .fourth-logo {
         width: 25vw;
     }
 
-    .second-logo, .third-logo, .fourth-logo, .fitfh-logo, .sixth-logo, .seventh-logo {
+    .second-logo, .third-logo, .fifth-logo, .sixth-logo, .seventh-logo {
         width: 40vw;
         margin: 2vh auto;
     }
@@ -601,7 +601,12 @@ footer a img {
         transition: all 1.1s ease-in-out;
     }
 
-    .second-logo, .third-logo, .fourth-logo, .fitfh-logo, .sixth-logo, .seventh-logo {
+    .fourth-logo {
+        width: 8vw;
+        transition: all 1.1s ease-in-out;
+    }
+
+    .second-logo, .third-logo, .fifth-logo, .sixth-logo, .seventh-logo {
         width: 11vw;
         transition: all 1.1s ease-in-out;
     }
@@ -610,7 +615,7 @@ footer a img {
         transform: scale(1.1);
     }
 
-    .third-logo, .sixth-logo, .seventh-logo {
+    .third-logo, .fourth-logo, .sixth-logo, .seventh-logo {
         padding: 0.5vw;
     }
 

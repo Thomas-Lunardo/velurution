@@ -51,16 +51,16 @@ $organisation = [
     'class' => 'third-logo',
   ],
   [
-    'link' => 'https://cleancitiescampaign.org/',
-    'src' => './assets/logos/Clean-Cities.webp',
-    'alt' => 'logo de l\'association Clean-Cities',
+    'link' => 'https://www.actionjusticeclimatlyon.fr/',
+    'src' => './assets/logos/action-justice-climat.svg',
+    'alt' => 'logo de l\'association Action Justice Climat',
     'class' => 'fourth-logo',
   ],
   [
-    'link' => 'https://rhone.alternatiba.eu/',
-    'src' => './assets/logos/alternatiba_rhone.webp',
-    'alt' => 'logo de l\'association Alternatiba',
-    'class' => 'fitfh-logo',
+    'link' => 'https://cleancitiescampaign.org/',
+    'src' => './assets/logos/Clean-Cities.webp',
+    'alt' => 'logo de l\'association Clean-Cities',
+    'class' => 'fifth-logo',
   ],
   [
     'link' => 'https://clavette-lyon.heureux-cyclage.org',

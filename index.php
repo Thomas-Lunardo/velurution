@@ -122,7 +122,7 @@ $organisation = [
     <section class="video-container">
       <img src="<?php echo $stars[2]['picture'] ?>" alt="<?php echo $stars[2]['alt'] ?>">
       <div>
-        <video controls controlslist="nodownload" class="video-presentation">
+        <video controls controlslist="nodownload">
           <source src="./assets/videos/velorution-fisrt-edition.mp4" type="video/mp4">
         </video>
         <i>Quartiers Libres #1</i>

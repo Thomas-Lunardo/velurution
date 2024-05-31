@@ -49,9 +49,12 @@ header {
     background-image: url(../assets/images/quartiers_libres_cut_opacity.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
-    height: 15rem;
-    position: relative;
+    background-position: top;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header img {
@@ -73,9 +76,6 @@ header h1 {
     position: absolute;
     font-size: 3em;
     font-weight: 100;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 /* ======== MEDIA QUERIES HEADER TABLET ========= */

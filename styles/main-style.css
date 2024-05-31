@@ -267,6 +267,11 @@ main section div {
     align-items: center;
 }
 
+main h2 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
 main section p {
     margin: 10px auto;
     text-align: start;
@@ -406,7 +411,6 @@ main section:nth-of-type(2) img {
 
 main section:nth-of-type(2) h2 {
     margin-top: 18px;
-    font-weight: lighter;
 }
 
 main section div:first-child p {

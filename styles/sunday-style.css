@@ -6,13 +6,13 @@
     --activeColorClass: rgb(141, 111, 177);
     --main-font:'Nunito Sans', sans-serif;
     --fontSizeP: 0.9em;
-    --boxShadow: 0px 3px 5px 3px rgba(69,69,69,0.59);
-    --textShadow: -1px 4px 4px rgba(15,7,4,0.41);
+    --boxShadow: 0px 4px 4px 0px rgba(69,69,69,0.59);
     --backgroundText: rgba(249, 246, 246, 1);
     --lineHeightP: 1.3em;
     --letterSpacingP: 0.03em;
     --borderRadius: 10px;
 }
+
 /* =========================================================== */
 
 /* =================== GOOGLE FONT =========================== /

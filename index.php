@@ -1,7 +1,5 @@
 <?php
-
 require './src/arrays.php';
-
 ?>
 
 <!DOCTYPE html>

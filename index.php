@@ -1,81 +1,5 @@
 <?php
-
-$stars = [
-  [
-    'picture' => './assets/images/étoile_1.png',
-    'alt' => 'illustration d\'une étoile jaune faisant du vélo',
-  ],
-  [
-    'picture' => './assets/images/étoile_2.png',
-    'alt' => 'illustration d\'une étoile verte faisant du monocycle',
-  ],
-  [
-    'picture' => './assets/images/étoile_3.png',
-    'alt' => 'illustration d\'une étoile verte faisant avec dans le panier avant, un rond rouge souriant',
-  ],
-  [
-    'picture' => './assets/images/étoile_4.png',
-    'alt' => 'illustration d\'une étoile violette faisant de la trotinette',
-  ],
-  [
-    'picture' => './assets/images/étoile_5.png',
-    'alt' => 'illustration de deux étoiles souriante faisant du tandem',
-  ],
-  [
-    'picture' => './assets/images/étoile_6.png',
-    'alt' => 'illustration d\'une étoile rouge faisant de la rosalie',
-  ],
-  [
-    'picture' => './assets/images/étoile_7.png',
-    'alt' => 'illustration d\'une étoile bleue faisant du vélo tirant un soleil souriant dans une charette',
-  ],
-];
-
-$organisation = [
-  [
-    'link' => 'https://larueestanouslyon.fr/accueil',
-    'src' => './assets/logos/la_rue_est_à_nous.webp',
-    'alt' => 'logo de l\'association La rue et à nous 69',
-    'class' => 'first-logo',
-  ],
-  [
-    'link' => 'https://www.maisonduvelolyon.org/',
-    'src' => './assets/logos/maison_du_vélo_lyon.webp',
-    'alt' => 'logo de l\'association Greenpeace',
-    'class' => 'second-logo',
-  ],
-  [
-    'link' => 'https://www.greenpeace.fr/',
-    'src' => './assets/logos/Greenpeace_logo.webp',
-    'alt' => 'logo de l\'association Greenpeace',
-    'class' => 'third-logo',
-  ],
-  [
-    'link' => 'https://cleancitiescampaign.org/',
-    'src' => './assets/logos/Clean-Cities.webp',
-    'alt' => 'logo de l\'association Clean-Cities',
-    'class' => 'fourth-logo',
-  ],
-  [
-    'link' => 'https://rhone.alternatiba.eu/',
-    'src' => './assets/logos/alternatiba_rhone.webp',
-    'alt' => 'logo de l\'association Alternatiba',
-    'class' => 'fitfh-logo',
-  ],
-  [
-    'link' => 'https://clavette-lyon.heureux-cyclage.org',
-    'src' => './assets/logos/clavette_lyonaise.webp',
-    'alt' => 'logo de l\'association Clavette',
-    'class' => 'sixth-logo',
-  ],
-  [
-    'link' => 'https://lavilleavelo.org/',
-    'src' => './assets/logos/la_ville_à_vélo.webp',
-    'alt' => 'logo de l\'association La ville à vélo',
-    'class' => 'seventh-logo',
-  ],
-];
-
+require './src/arrays.php';
 ?>
 
 <!DOCTYPE html>
@@ -120,18 +44,18 @@ $organisation = [
   </nav>
   <main>
     <section class="video-container">
-      <img src="<?php echo $stars[2]['picture'] ?>" alt="<?php echo $stars[2]['alt'] ?>">
+      <img src="<?php echo $stars[2]['picture'] ?>" alt="<?php echo $stars[2]['alt'] ?>" loading="lazy">
       <div>
         <video controls controlslist="nodownload">
           <source src="./assets/videos/velorution-fisrt-edition.mp4" type="video/mp4">
         </video>
         <i>Quartiers Libres #1</i>
       </div>
-      <img src="<?php echo $stars[5]['picture'] ?>" alt="<?php echo $stars[5]['alt'] ?>">
+      <img src="<?php echo $stars[5]['picture'] ?>" alt="<?php echo $stars[5]['alt'] ?>" loading="lazy">
     </section>
     <section>
       <div>
-        <img src="<?php echo $stars[4]['picture'] ?>" alt="<?php echo $stars[5]['alt'] ?>">
+        <img src="<?php echo $stars[4]['picture'] ?>" alt="<?php echo $stars[5]['alt'] ?>" loading="lazy">
         <h2>Viva la vélorution !</h2>
         <p>Favorisons la mobilité des enfants dans le Grand Lyon !</p>
       </div>
@@ -185,13 +109,13 @@ $organisation = [
   </main>
   <footer>
     <section>
-      <img src="<?php echo $stars[6]['picture'] ?>" alt="<?php echo $stars[6]['alt'] ?>">
+      <img src="<?php echo $stars[6]['picture'] ?>" alt="<?php echo $stars[6]['alt'] ?>" loading="lazy">
       <h2>Associations partenaires</h2>
     </section>
     <section>
       <?php foreach ($organisation as $key => $value) { ?>
         <a href="<?php echo $value['link'] ?>" target="_blank">
-          <img src="<?php echo $value['src'] ?>" alt="<?php echo $value['alt'] ?>" class="<?php echo $value['class'] ?>" /></a>
+          <img src="<?php echo $value['src'] ?>" alt="<?php echo $value['alt'] ?>" class="<?php echo $value['class'] ?>" loading="lazy"/></a>
       <?php } ?>
     </section>
     <section>

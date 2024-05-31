@@ -6,13 +6,13 @@
     --activeColorClass: rgb(141, 111, 177);
     --main-font:'Nunito Sans', sans-serif;
     --fontSizeP: 0.9em;
-    --boxShadow: 0px 3px 5px 3px rgba(69,69,69,0.59);
-    --textShadow: -1px 4px 4px rgba(15,7,4,0.41);
+    --boxShadow: 0px 4px 4px 0px rgba(69,69,69,0.59);
     --backgroundText: rgba(249, 246, 246, 1);
     --lineHeightP: 1.3em;
     --letterSpacingP: 0.03em;
     --borderRadius: 10px;
 }
+
 /* =========================================================== */
 
 /* =================== GOOGLE FONT =========================== /
@@ -73,8 +73,9 @@ header img {
 header h1 {
     color: var(--titleColor);
     font-size: 2.3em;
-    font-weight: lighter;
     font-weight: 100;
+    margin: auto 2vw;
+    text-align: center;
 }
 
 /* ======== MEDIA QUERIES HEADER TABLET ========= */
@@ -196,8 +197,8 @@ main section {
 }
 
 main section p {
-    line-height: 1.3em;
-    letter-spacing: 0.04em;
+    line-height: var(--lineHeightP);
+    letter-spacing: var(--letterSpacingP);
 }
 
 /* LINKS MOBILE*/
@@ -251,16 +252,16 @@ main section:nth-of-type(1) img {
 }
 
 main section:nth-of-type(1) div:nth-of-type(1) div {
-    background-color: whitesmoke;
-    box-shadow: var(--boxShadow);
-    border-radius: 12px;
-    padding: 8px 12px;
-    margin: 0 8vw 37px;
-    height: 13vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    width: 80vw;
+    margin: 0 auto 4vh;
+    height: 13vh;
+    background-color: whitesmoke;
+    box-shadow: var(--boxShadow);
+    border-radius: var(--borderRadius);
 }
 
 main section:nth-of-type(1) div:nth-of-type(1) div p:nth-of-type(1) {
@@ -356,7 +357,7 @@ main section:nth-of-type(1) div:nth-of-type(2) p:first-of-type {
     }
 
     main section:nth-of-type(1) div:nth-of-type(2) {
-        width: 65vw;
+        width: 68vw;
         margin: 0 auto 5vh;
         font-size: 1.3em;
     }
@@ -376,7 +377,6 @@ main section:nth-of-type(1) div:nth-of-type(2) p:first-of-type {
 
 main section:nth-of-type(2) h6{
     font-size: 1.5em;
-    font-weight: lighter;
     margin-bottom: 24px;
     position: absolute;
     left: 30vw;
@@ -511,7 +511,6 @@ main section:nth-of-type(2) div div p:nth-of-type(2) {
 main section:nth-of-type(3) h6 {
     text-align: center;
     font-size: 1.9em;
-    font-weight: lighter;
     margin: 12px 0 24px;
 }
 
@@ -615,7 +614,6 @@ main section:nth-of-type(4) {
 main section:nth-of-type(4) h6 {
     text-align: center;
     font-size: 1.9em;
-    font-weight: lighter;
     margin: 7vh 0 24px;
 }
 

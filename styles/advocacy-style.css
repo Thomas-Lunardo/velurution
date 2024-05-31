@@ -6,8 +6,7 @@
     --activeColorClass: rgb(141, 111, 177);
     --main-font:'Nunito Sans', sans-serif;
     --fontSizeP: 0.9em;
-    --boxShadow: 0px 3px 5px 3px rgba(69,69,69,0.59);
-    --textShadow: -1px 4px 4px rgba(15,7,4,0.41);
+    --boxShadow: 0px 4px 4px 0px rgba(69,69,69,0.59);
     --backgroundText: rgba(249, 246, 246, 1);
     --lineHeightP: 1.3em;
     --letterSpacingP: 0.03em;
@@ -49,15 +48,26 @@ header {
     background-image: url(../assets/images/quartiers_libres_cut_opacity.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
-    height: 15rem;
-    position: relative;
+    background-position: top;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header img {
-    width: 36px;
-    margin: 28px;
-    float: right;
+    width: 40px;
+    position: fixed;
+    top: 2%;
+    right: 4%;
+    padding: 4px;
+    border-radius: var(--borderRadius);
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 header h1 {
@@ -65,9 +75,6 @@ header h1 {
     position: absolute;
     font-size: 3em;
     font-weight: 100;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 /* ======== MEDIA QUERIES HEADER TABLET ========= */

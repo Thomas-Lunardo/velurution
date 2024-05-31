@@ -1,15 +1,16 @@
 <?php
 require './src/setTime.php';
+require './src/arrays.php';
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vélorution</title>
-    <link rel="stylesheet" href="./styles/sunday-style.css" />
+    <link rel="stylesheet" href="../../styles/sunday-style.css" />
 </head>
 
 <body>
@@ -27,7 +28,7 @@ require './src/setTime.php';
     <main>
         <section>
             <div>
-                <img src="./assets/images/étoile_1.png" alt="illustration d'une étoile faisant du vélo">
+                <img src="<?php echo $stars[2]['picture'] ?>" alt="<?php echo $stars[2]['alt'] ?>" loading="lazy">
                 <div>
                     <p>Dimanche 23 juin 2024</p>
                     <p>10h00</p>
@@ -42,7 +43,7 @@ require './src/setTime.php';
         <section>
             <h6>Départ dans ...</h6>
             <div class="countdown-container">
-                <img src="./assets/images/étoile_2.png" alt="illustration d'une étoile faisant du vélo">
+                <img src="<?php echo $stars[1]['picture'] ?>" alt="<?php echo $stars[1]['alt'] ?>" loading="lazy">
                 <div class="countdown-container-unity">
                     <?php foreach ($timeInformation as $key => $time) { ?>
                         <div class="countdown-unity">
@@ -58,14 +59,14 @@ require './src/setTime.php';
             <p>5,4 km</p>
             <p>Le parcours est facile afin que les enfants puissent passer un agréable moment. Nous ne montons pas à Fourvière cette année.</p>
             <div>
-                <img src="./assets/images/étoile_4.png" alt="illustration d'une étoile violette souriante faisant de la trotinette">
-                <img src="./assets/images/trajet.webp" alt="capture d'écran d'une carte du trajet de la vélorution">
+                <img src="<?php echo $stars[3]['picture'] ?>" alt="<?php echo $stars[3]['alt'] ?>" loading="lazy">
+                <img src="./assets/images/trajet.webp" alt="capture d'écran d'une carte du trajet de la vélorution" loading="lazy">
             </div>
             <a href="https://maps.app.goo.gl/ybe8gtgS8Ds33BJj8" target="_blank">Trajet</a>
         </section>
         <section>
             <h6>L'organisation</h6>
-            <img src="./assets/images/étoile_3.png" alt="illustration d'une étoile verte souriante faisant du vélo avec un petit personnage pour panier avant" class="et-star">
+            <img src="<?php echo $stars[2]['picture'] ?>" alt="<?php echo $stars[2]['alt'] ?>" class="et-star" loading="lazy">
             <p>10h00</p>
             <p>Rendez-vous sur la <strong>place des terreaux</strong></p>
             <p>Des musiciens accompagneront le cortège, et de nombreuses animations (Pimp’ Mon Vélo, parcours d’obstacle, jeux sur les mobilités…) sont prévues au départ et à l’arrivée. Vélos, trottinettes, rollers (...) sont tous bienvenus !</p>
@@ -73,19 +74,19 @@ require './src/setTime.php';
             <a href="https://maps.app.goo.gl/QRhSEUg9tsU6ucE47" target="_blank">Me rendre aux Terreaux</a>
             <div class="the-way">
                 <div>
-                    <img src="./assets/images/étoile_5.png" alt="illustration de deux étoiles souriantes faisant du tandem">
+                    <img src="<?php echo $stars[4]['picture'] ?>" alt="<?php echo $stars[4]['alt'] ?>">
                     <p>11h00</p>
                     <p>Départ !</p>
                 </div>
-                <img src="./assets/icones/arrow-way.png" alt="dessin d'une flêche qui zig-zag" class="zig-zag">
-                <img src="./assets/icones/arrow_tablet&desktop.png" alt="dessin d'une flêche qui zig-zag" class="zig-zag-tablel-desktop">
+                <img src="./assets/icones/arrow-way.png" alt="dessin d'une flêche qui zig-zag" class="zig-zag" loading="lazy">
+                <img src="./assets/icones/arrow_tablet&desktop.png" alt="dessin d'une flêche qui zig-zag" class="zig-zag-tablel-desktop" loading="lazy">
                 <div>
-                    <img src="./assets/images/étoile_7.png" alt="illustration d'une étoile faisant du vélo tirant un soleil souriant dans une charette">
+                    <img src="<?php echo $stars[6]['picture'] ?>" alt="<?php echo $stars[6]['alt'] ?>" loading="lazy">
                     <p>12h00</p>
                     <p>Arrivée prévue au <strong>Parc Blandan</strong></p>
                 </div>
             </div>
-            <img src="./assets/images/parcblandan_ramparts.webp" alt="photo des ramparts du parc Blandan et son aire de jeux avec des toboggan" class="lyon-picture">
+            <img src="./assets/images/parcblandan_ramparts.webp" alt="photo des ramparts du parc Blandan et son aire de jeux avec des toboggan" class="lyon-picture" loading="lazy">
             <a href="https://maps.app.goo.gl/KSu4UM3c2ywLJaQw9" target="_blank">Me rendre au parc Blandan</a>
         </section>
         <section>

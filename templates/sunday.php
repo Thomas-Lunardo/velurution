@@ -15,14 +15,14 @@ require '../src/arrays.php';
 
 <body>
     <header id="up">
-        <a href="./index.php"><img src="../assets/icones/icon_house.png" alt="icone d'une maison" /></a>
+        <a href="../index.php"><img src="../assets/icones/icon_house.png" alt="icone d'une maison" /></a>
         <h1>Vélorution enfants</h1>
     </header>
     <nav>
         <ul>
-            <li><a href="./index.php">Accueil</a></li>
+            <li><a href="../index.php">Accueil</a></li>
             <li class="active"><a href="./sunday.php">Vélorution</a></li>
-            <li><a href="./advocacy.php">Plaidoyer</a></li>
+            <li><a href="../templates/advocacy.php">Plaidoyer</a></li>
         </ul>
     </nav>
     <main>

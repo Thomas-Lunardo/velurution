@@ -1,6 +1,6 @@
 <?php
-require './src/setTime.php';
-require './src/arrays.php';
+require '../src/setTime.php';
+require '../src/arrays.php';
 ?>
 
 <!DOCTYPE html>
@@ -15,7 +15,7 @@ require './src/arrays.php';
 
 <body>
     <header id="up">
-        <a href="./index.php"><img src="./assets/icones/icon_house.png" alt="icone d'une maison" /></a>
+        <a href="./index.php"><img src="../assets/icones/icon_house.png" alt="icone d'une maison" /></a>
         <h1>Vélorution enfants</h1>
     </header>
     <nav>
@@ -60,7 +60,7 @@ require './src/arrays.php';
             <p>Le parcours est facile afin que les enfants puissent passer un agréable moment. Nous ne montons pas à Fourvière cette année.</p>
             <div>
                 <img src="<?php echo $stars[3]['picture'] ?>" alt="<?php echo $stars[3]['alt'] ?>" loading="lazy">
-                <img src="./assets/images/trajet.webp" alt="capture d'écran d'une carte du trajet de la vélorution" loading="lazy">
+                <img src="../assets/images/trajet.webp" alt="capture d'écran d'une carte du trajet de la vélorution" loading="lazy">
             </div>
             <a href="https://maps.app.goo.gl/ybe8gtgS8Ds33BJj8" target="_blank">Trajet</a>
         </section>
@@ -70,7 +70,7 @@ require './src/arrays.php';
             <p>10h00</p>
             <p>Rendez-vous sur la <strong>place des terreaux</strong></p>
             <p>Des musiciens accompagneront le cortège, et de nombreuses animations (Pimp’ Mon Vélo, parcours d’obstacle, jeux sur les mobilités…) sont prévues au départ et à l’arrivée. Vélos, trottinettes, rollers (...) sont tous bienvenus !</p>
-            <img src="./assets/images/place-des-terreaux.webp" alt="photo de la place des Terreaux à Lyon avec vue sur l'hotel de ville" class="lyon-picture">
+            <img src="../assets/images/place-des-terreaux.webp" alt="photo de la place des Terreaux à Lyon avec vue sur l'hotel de ville" class="lyon-picture">
             <a href="https://maps.app.goo.gl/QRhSEUg9tsU6ucE47" target="_blank">Me rendre aux Terreaux</a>
             <div class="the-way">
                 <div>
@@ -78,15 +78,15 @@ require './src/arrays.php';
                     <p>11h00</p>
                     <p>Départ !</p>
                 </div>
-                <img src="./assets/icones/arrow-way.png" alt="dessin d'une flêche qui zig-zag" class="zig-zag" loading="lazy">
-                <img src="./assets/icones/arrow_tablet&desktop.png" alt="dessin d'une flêche qui zig-zag" class="zig-zag-tablel-desktop" loading="lazy">
+                <img src="../assets/icones/arrow-way.png" alt="dessin d'une flêche qui zig-zag" class="zig-zag" loading="lazy">
+                <img src="../assets/icones/arrow_tablet&desktop.png" alt="dessin d'une flêche qui zig-zag" class="zig-zag-tablel-desktop" loading="lazy">
                 <div>
                     <img src="<?php echo $stars[6]['picture'] ?>" alt="<?php echo $stars[6]['alt'] ?>" loading="lazy">
                     <p>12h00</p>
                     <p>Arrivée prévue au <strong>Parc Blandan</strong></p>
                 </div>
             </div>
-            <img src="./assets/images/parcblandan_ramparts.webp" alt="photo des ramparts du parc Blandan et son aire de jeux avec des toboggan" class="lyon-picture" loading="lazy">
+            <img src="../assets/images/parcblandan_ramparts.webp" alt="photo des ramparts du parc Blandan et son aire de jeux avec des toboggan" class="lyon-picture" loading="lazy">
             <a href="https://maps.app.goo.gl/KSu4UM3c2ywLJaQw9" target="_blank">Me rendre au parc Blandan</a>
         </section>
         <section>
@@ -97,7 +97,7 @@ require './src/arrays.php';
         </section>
     </main>
     <footer>
-        <a href="#up"><img src="./assets/icones/chevron_purple_up.png" alt="chevron violet qui vous ramène en haut de page"></a>
+        <a href="#up"><img src="../assets/icones/chevron_purple_up.png" alt="chevron violet qui vous ramène en haut de page"></a>
     </footer>
 </body>
 

@@ -1,5 +1,5 @@
 <?php
-require './src/arrays.php';
+require '../src/arrays.php';
 ?>
 
 <!DOCTYPE html>
@@ -9,18 +9,18 @@ require './src/arrays.php';
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Plaidoyer</title>
-  <link rel="stylesheet" href="./styles/advocacy-style.css" />
+  <link rel="stylesheet" href="../styles/advocacy-style.css" />
 </head>
 
 <body>
   <header>
-    <a href="./index.php"><img src="./assets/icones/icon_house.png" alt="icone d'une maison" /></a>
+    <a href="../index.php"><img src="../assets/icones/icon_house.png" alt="icone d'une maison" /></a>
     <h1>Plaidoyer</h1>
   </header>
   <nav>
     <ul>
-      <li><a href="./index.php">Accueil</a></li>
-      <li><a href="./sunday.php">Vélorution</a></li>
+      <li><a href="../index.php">Accueil</a></li>
+      <li><a href="../templates/sunday.php">Vélorution</a></li>
       <li  class="active"><a href="./advocacy.php">Plaidoyer</a></li>
     </ul>
   </nav>

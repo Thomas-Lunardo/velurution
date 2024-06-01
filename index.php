@@ -27,7 +27,7 @@ require './src/arrays.php';
           </p>
         </div>
       </a>
-      <a href="./sunday.php">
+      <a href="./templates/sunday.php">
         <div>
           <h3>Dimanche 23 juin 2024</h3>
           <p>Vélorution enfants</p>
@@ -38,8 +38,8 @@ require './src/arrays.php';
   <nav>
     <ul>
       <li class="active"><a href="./index.php">Accueil</a></li>
-      <li><a href="./sunday.php">Vélorution</a></li>
-      <li><a href="./advocacy.php">Plaidoyer</a></li>
+      <li><a href="./templates/sunday.php">Vélorution</a></li>
+      <li><a href="./templates/advocacy.php">Plaidoyer</a></li>
     </ul>
   </nav>
   <main>
@@ -77,7 +77,7 @@ require './src/arrays.php';
           le déploiement de politiques permettant de développer les mobilités
           actives de tous les enfants.
         </p>
-        <a href="advocacy.php">Plaidoyer</a>
+        <a href="./templates/advocacy.php">Plaidoyer</a>
         <p>
           Pour Clément Drognat Landré de La Rue Est À Nous, “il est urgent de
           rééquilibrer le partage de l’espace public en faveur des enfants et

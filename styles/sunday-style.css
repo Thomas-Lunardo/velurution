@@ -508,6 +508,10 @@ main section:nth-of-type(2) div div p:nth-of-type(2) {
 
 /* === THRID SECTION (THIS THE WAY)=== */
 
+main section:nth-of-type(3) {
+    display: none;
+}
+
 main section:nth-of-type(3) h6 {
     text-align: center;
     font-size: 1.9em;
@@ -614,7 +618,7 @@ main section:nth-of-type(4) {
 main section:nth-of-type(4) h6 {
     text-align: center;
     font-size: 1.9em;
-    margin: 7vh 0 24px;
+    margin: 4vh 0 24px;
 }
 
 .et-star {
@@ -681,12 +685,11 @@ main section:nth-of-type(4) div div p:nth-of-type(2) {
 
     main section:nth-of-type(4) {
         width: 80vw;
-        margin: 0 auto;
+        margin: 6vh auto;
     }
 
     main section:nth-of-type(4) h6{
         font-size: 3em;
-        margin: 32px auto 6vh;
     }
 
     main section:nth-of-type(4) p:nth-of-type(3) {
@@ -738,7 +741,7 @@ main section:nth-of-type(4) div div p:nth-of-type(2) {
 
     main section:nth-of-type(4) {
         width: 80vw;
-        margin: 0 auto;
+        margin: 12vh auto 7vh;
     }
 
     main section:nth-of-type(4) h6{
@@ -806,15 +809,11 @@ main section:nth-of-type(5) {
 main section:nth-of-type(5) h6 {
     text-align: center;
     font-size: 1.9em;
-    font-weight: lighter;
     margin: 7vh 0 24px;
 }
 
 main section:nth-of-type(5) p {
-    justify-content: center;
-    margin: 12px 2vw 24px;
-    line-height: 1.3em;
-    letter-spacing: 0.04em;
+    margin: 12px 1vw 24px;
 }
 
 main section:nth-of-type(5) a:first-of-type {

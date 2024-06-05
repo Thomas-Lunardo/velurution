@@ -10,6 +10,7 @@ require '../src/arrays.php';
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Plaidoyer</title>
   <link rel="stylesheet" href="../styles/advocacy-style.css" />
+  <link rel="icon" type="image/png" href="../assets/images/étoile_3.png" />
 </head>
 
 <body>

@@ -555,6 +555,10 @@ footer a img {
         margin: 2vh auto;
     }
 
+    .maison-env-logo, .greenpeace-logo, .ajc-logo, .clavette-logo, .llv-logo {
+        padding: 2vw;
+    }
+
     /* ===================== */
 
     footer a img {

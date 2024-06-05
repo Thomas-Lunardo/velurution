@@ -10,6 +10,7 @@ require './src/arrays.php';
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Quartiers libres #2</title>
   <link rel="stylesheet" href="./styles/main-style.css" />
+  <link rel="icon" type="image/png" href="./assets/images/étoile_1.png" />
 </head>
 
 <body>

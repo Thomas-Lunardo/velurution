@@ -80,6 +80,10 @@ header h1 {
 /* ======== MEDIA QUERIES HEADER TABLET ========= */
 
 @media screen and (min-width: 568px) and (max-width: 1024px) {
+
+    header h1 {
+        font-size: 3em;
+    }
 }
 
 
@@ -90,6 +94,14 @@ header h1 {
 @media screen and (min-width: 1024px) {
     header img {
         display: none;
+    }
+
+    header {
+        height: 35vh;
+    }
+
+    header h1 {
+        font-size: 4em;
     }
 }
 
@@ -126,7 +138,6 @@ nav {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        margin-left: 50px;
     }
 
     nav ul li {

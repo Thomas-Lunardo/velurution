@@ -11,6 +11,7 @@ require '../src/arrays.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vélorution</title>
     <link rel="stylesheet" href="../../styles/sunday-style.css" />
+    <link rel="icon" type="image/png" href="../assets/images/étoile_6.png" />
 </head>
 
 <body>

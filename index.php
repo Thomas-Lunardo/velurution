@@ -104,6 +104,7 @@ require './src/arrays.php';
           collège, prendre en compte les accompagnants adultes… et aussi aider
           les familles précaires à se doter des équipements nécessaires !”
         </p>
+        <img src="./assets/images/flyer_vélorution.jpg" alt="flyer de l'énévement">
         <a href="./assets/images/flyer_vélorution.jpg" download="flyer-vélorution.jpg">Télécharger le Flyer</a>
       </div>
     </section>

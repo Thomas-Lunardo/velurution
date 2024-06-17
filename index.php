@@ -108,6 +108,17 @@ require './src/arrays.php';
         <a href="./assets/images/flyer_vélorution.jpg" download="flyer-vélorution.jpg">Télécharger le Flyer</a>
       </div>
     </section>
+    <section>
+      <div class="heading-section">
+        <img src="<?php echo $stars[2]['picture'] ?>" alt="<?php echo $stars[2]['alt'] ?>" loading="lazy">
+        <h2>Actualités</h2>
+      </div>
+      <div>
+        <h3>La Bibliambule rejoint la vélorution !</h3>
+        <img src="./assets/images/Bibliambule_Maison_Environnement_2.jpg" alt="photo d'une médiathèque amublante ouverte avec des hamacs et le guidon du vélo">
+      </div>
+      <div></div>
+    </section>
   </main>
   <footer>
     <section>
@@ -117,7 +128,7 @@ require './src/arrays.php';
     <section>
       <?php foreach ($organisation as $key => $value) { ?>
         <a href="<?php echo $value['link'] ?>" target="_blank">
-          <img src="<?php echo $value['src'] ?>" alt="<?php echo $value['alt'] ?>" class="<?php echo $value['class'] ?>" loading="lazy"/></a>
+          <img src="<?php echo $value['src'] ?>" alt="<?php echo $value['alt'] ?>" class="<?php echo $value['class'] ?>" loading="lazy" /></a>
       <?php } ?>
     </section>
     <section>

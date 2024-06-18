@@ -28,15 +28,15 @@ require '../src/arrays.php';
   <main>
     <p>Pour que les enfants puissent se déplacer en autonomie vers leurs activités, dans des quartiers plus vivants et respirables, nous demandons :
     </p>
-    <div class="advocacy-grid">
+    <section class="advocacy-grid">
       <?php foreach ($advocacy as $key => $value) { ?>
-        <article>
-          <img src="<?php echo $value['star'] ?>" alt="<?php echo $value['alt'] ?>" loading="lazy">
+        <div>
+          <img src="<?php echo $value['star'] ?>" alt="<?php echo $value['alt'] ?>" class="<?php echo $value['class'] ?>" loading="lazy">
           <h4><?php echo $value['title'] ?></h4>
           <p><?php echo $value['argument'] ?></p>
-        </article>
+        </div>
       <?php } ?>
-    </div>
+    </section>
   </main>
 </body>
 

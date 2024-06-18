@@ -230,7 +230,6 @@ main section div h4 {
 
 @media screen and (min-width: 568px) and (max-width: 1024px) {
 
-
     main p:first-child {
         margin: 3vh 10vw 5vh;
     }
@@ -280,26 +279,38 @@ main section div h4 {
 
     main p:first-child {
         text-align: center;
+        margin: 3vh auto 5vh;
     }
  
     .advocacy-grid {
         display: grid;
-        grid-template-columns: repeat(2, 50vw);
+        grid-template-columns: repeat(2, 41vw);
         text-align: center;
         flex-wrap: wrap;
     }
 
     main section div {
-        width: 40vw;
-        margin: 0 auto;
+        width: 32vw;
         background-color: var(--backgroundText);
         box-shadow: var(--boxShadow);
         border-radius: 12px;
-        margin: 12px 4vw 30px;
-        padding: 10px 20px;
+        margin: 12px 4vw 5vh;
+        padding: 10px 2vw;
     }
 
-    main section div img {
+    .single-yellow, .green-and-red, .single-red  {
+        width: 4vw;
+    }
+    
+    .single-green {
+        width: 2.5vw;
+    }
+    
+    .single-purple {
+        width: 3vw;
+    }
+    
+    .green-and-purple, .blue-and-yellow {
         width: 5vw;
     }
 

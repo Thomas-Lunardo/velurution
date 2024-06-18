@@ -116,12 +116,12 @@ require './src/arrays.php';
       <div>
         <h3>La Bibliambule rejoint la vélorution !</h3>
         <img src="./assets/images/Bibliambule_Maison_Environnement_2.jpg" alt="photo d'une médiathèque amublante ouverte avec des hamacs et le guidon du vélo">
-        <p>La maison de l’environnement fait à présent parti des association organisatrices de l’évenement. Elle sera présente à la vélorution  avec sa médiathèque ambulante.</p>
+        <p>La maison de l’environnement fait à présent parti des association organisatrices de l’évenement. Elle sera présente à la vélorution avec sa médiathèque ambulante.</p>
         <p>Venez bouquiner confortablement installé dans un hamac et découvrir nos nouveautés : romans, BD, revues, DVD ou jeux de société… il y en a pour tous les goûts !</p>
       </div>
       <div>
         <h3>Vente de vélo</h3>
-        <p>Le samedi 22 juin 2024, les ateliers vélo participatifs vous invitent, au Chat Perché, 29 rue Reinach dans le 7e à Lyon, pour une journée mécano-festive !</p>
+        <p>Le samedi 22 juin 2024, les ateliers vélo participatifs vous invitent, au Chat Perché, 29 rue Reinach dans le 7e à Lyon, pour une journée mécano-festive !</p>
         <p>Il y a aura de nombreuses animations ainsi qu’une vente de vélo pour les enfants.</p>
       </div>
     </section>

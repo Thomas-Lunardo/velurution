@@ -49,7 +49,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-    height: 20vh;
+    height: 25vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -229,8 +229,10 @@ main section div h4 {
 /* ======== MEDIA QUERIES MAIN TABLET ========= */
 
 @media screen and (min-width: 568px) and (max-width: 1024px) {
+
+
     main p:first-child {
-        margin: 50px 7rem 32px;
+        margin: 3vh 10vw 5vh;
     }
 
     .advocacy-grid {
@@ -240,8 +242,33 @@ main section div h4 {
         flex-wrap: wrap;
     }
 
-    main section div img {
+    main section div {
+        height: 28vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 2vh 3vw;
+    }
+
+    .single-yellow, .green-and-red, .single-red  {
         width: 10vw;
+    }
+    
+    .single-green {
+        width: 6vw;
+    }
+    
+    .single-purple {
+        width: 8vw;
+    }
+    
+    .green-and-purple {
+        width: 13vw;
+    }
+    
+    .blue-and-yellow {
+        width: 15vw;
     }
 }
 

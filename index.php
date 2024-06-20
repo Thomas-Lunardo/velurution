@@ -36,9 +36,16 @@ require './src/arrays.php';
       </a>
     </section>
   </header>
-  <nav>
+  <nav class="navbar-desktop">
     <ul>
-      <li class="active"><a href="./index.php">Accueil</a></li>
+      <li class="active"><a href="#">Accueil</a></li>
+      <li><a href="./templates/sunday.php">Vélorution</a></li>
+      <li><a href="./templates/advocacy.php">Plaidoyer</a></li>
+    </ul>
+  </nav>
+  <nav class="navbar-mobile">
+    <ul class="nav-list-mobile">
+      <li class="active"><a href="#">Accueil</a></li>
       <li><a href="./templates/sunday.php">Vélorution</a></li>
       <li><a href="./templates/advocacy.php">Plaidoyer</a></li>
     </ul>
@@ -141,6 +148,8 @@ require './src/arrays.php';
       <a href="#up"><img src="./assets/icones/chevron_purple_up.png" alt="chevron violet qui vous ramène en haut de page"></a>
     </section>
   </footer>
+
+  <script src="./assets/script.js"></script>
 </body>
 
 </html>

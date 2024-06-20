@@ -317,7 +317,7 @@ header div h3, header div p {
 
     .navbar-desktop ul li a {
         color: var(--backgroundText);
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 
     .active {

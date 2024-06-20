@@ -192,10 +192,10 @@ header div h3, header div p {
 .nav-list-mobile {
     display: flex;
     flex-direction: column;
-    height: 50vh;
+    height: 100vh;
     width: 85vw;
     background-color: var(--activeColorClass);
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     position: fixed;
     top: 1vh;
@@ -230,9 +230,20 @@ header div h3, header div p {
     z-index: 1000;
 }
 
+.nav-list-mobile li {
+    margin: 5vh auto;
+}
+
 .nav-list-mobile a {
     color: var(--backgroundText);
     font-size: 1.4em;
+}
+
+.nav-list-mobile p {
+    color: var(--backgroundText);
+    font-size: 0.9em;
+    text-align: center;
+    margin: 0.5vh auto;
 }
 
 /* ==== MEDIA QUERIES NAV BAR TABLET ==== */

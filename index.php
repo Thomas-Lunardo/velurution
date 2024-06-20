@@ -47,8 +47,11 @@ require './src/arrays.php';
     <img src="./assets/icones/menu-burger.png" alt="icone d'un menu burger" class="burger">
     <ul class="nav-list-mobile">
       <li class="active"><a href="#">Accueil</a></li>
-      <li><a href="./templates/sunday.php">Vélorution</a></li>
       <li><a href="./templates/advocacy.php">Plaidoyer</a></li>
+      <li><a href="./templates/sunday.php">Vélorution</a></li>
+      <li><a href="https://clavette-lyon.heureux-cyclage.org/index.php/2024/01/24/samedi-22-juin-2024-fete-des-ateliers-velo-participatifs/">Fête des ateliers vélo</a>
+        <p>Site La clavette</p>
+      </li>
     </ul>
   </nav>
   <main>

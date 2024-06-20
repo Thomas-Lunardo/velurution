@@ -23,6 +23,7 @@ require '../src/arrays.php';
             <li><a href="../index.php">Accueil</a></li>
             <li class="active"><a href="#">Vélorution</a></li>
             <li><a href="./advocacy.php">Plaidoyer</a></li>
+            <li><a href="https://clavette-lyon.heureux-cyclage.org/index.php/2024/01/24/samedi-22-juin-2024-fete-des-ateliers-velo-participatifs/"  target="_blank">Fête des ateliers vélo</a>
         </ul>
     </nav>
     <nav class="navbar-mobile">

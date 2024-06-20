@@ -36,11 +36,23 @@ require './src/arrays.php';
       </a>
     </section>
   </header>
-  <nav>
+  <nav class="navbar-desktop">
     <ul>
-      <li class="active"><a href="./index.php">Accueil</a></li>
+      <li class="active"><a href="#">Accueil</a></li>
       <li><a href="./templates/sunday.php">Vélorution</a></li>
       <li><a href="./templates/advocacy.php">Plaidoyer</a></li>
+      <li><a href="https://clavette-lyon.heureux-cyclage.org/index.php/2024/01/24/samedi-22-juin-2024-fete-des-ateliers-velo-participatifs/"  target="_blank">Fête des ateliers vélo</a>
+    </ul>
+  </nav>
+  <nav class="navbar-mobile">
+    <img src="./assets/icones/menu-burger.png" alt="icone d'un menu burger" class="burger">
+    <ul class="nav-list-mobile">
+      <li><a href="#">Accueil</a></li>
+      <li><a href="./templates/advocacy.php">Plaidoyer</a></li>
+      <li><a href="./templates/sunday.php">Vélorution</a></li>
+      <li><a href="https://clavette-lyon.heureux-cyclage.org/index.php/2024/01/24/samedi-22-juin-2024-fete-des-ateliers-velo-participatifs/">Fête des ateliers vélo</a>
+        <p>Site La clavette</p>
+      </li>
     </ul>
   </nav>
   <main>
@@ -141,6 +153,8 @@ require './src/arrays.php';
       <a href="#up"><img src="./assets/icones/chevron_purple_up.png" alt="chevron violet qui vous ramène en haut de page"></a>
     </section>
   </footer>
+
+  <script src="./assets/script.js"></script>
 </body>
 
 </html>

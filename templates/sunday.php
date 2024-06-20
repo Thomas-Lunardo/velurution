@@ -16,14 +16,25 @@ require '../src/arrays.php';
 
 <body>
     <header id="up">
-        <a href="../index.php"><img src="../assets/icones/icon_house.png" alt="icone d'une maison" /></a>
         <h1>Vélorution enfants</h1>
     </header>
-    <nav>
+    <nav class="navbar-desktop">
         <ul>
             <li><a href="../index.php">Accueil</a></li>
-            <li class="active"><a href="./sunday.php">Vélorution</a></li>
-            <li><a href="../templates/advocacy.php">Plaidoyer</a></li>
+            <li class="active"><a href="#">Vélorution</a></li>
+            <li><a href="./advocacy.php">Plaidoyer</a></li>
+            <li><a href="https://clavette-lyon.heureux-cyclage.org/index.php/2024/01/24/samedi-22-juin-2024-fete-des-ateliers-velo-participatifs/"  target="_blank">Fête des ateliers vélo</a>
+        </ul>
+    </nav>
+    <nav class="navbar-mobile">
+        <img src="../assets/icones/menu-burger.png" alt="icone d'un menu burger" class="burger">
+        <ul class="nav-list-mobile">
+            <li><a href="../index.php">Accueil</a></li>
+            <li><a href="./advocacy.php">Plaidoyer</a></li>
+            <li><a href="#">Vélorution</a></li>
+            <li><a href="https://clavette-lyon.heureux-cyclage.org/index.php/2024/01/24/samedi-22-juin-2024-fete-des-ateliers-velo-participatifs/">Fête des ateliers vélo</a>
+                <p>Site La clavette</p>
+            </li>
         </ul>
     </nav>
     <main>
@@ -100,6 +111,7 @@ require '../src/arrays.php';
     <footer>
         <a href="#up"><img src="../assets/icones/chevron_purple_up.png" alt="chevron violet qui vous ramène en haut de page"></a>
     </footer>
+    <script src="../assets/script.js"></script>
 </body>
 
 </html>

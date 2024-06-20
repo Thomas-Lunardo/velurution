@@ -193,14 +193,26 @@ header div h3, header div p {
     display: flex;
     flex-direction: column;
     height: 50vh;
-    width: 90%;
+    width: 85vw;
     background-color: var(--activeColorClass);
     justify-content: space-evenly;
     align-items: center;
     position: fixed;
-    top: 0;
+    top: 1vh;
     right: -150vw;
     z-index: 999;
+    box-shadow: var(--boxShadow);
+    -webkit-border-top-left-radius: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+    -moz-border-radius-topleft: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: right 0.5s;
+}
+
+.list-visible {
+    right: 0;
 }
 
 .navbar-mobile img {
@@ -209,13 +221,13 @@ header div h3, header div p {
     top: 1%;
     left: 2%;
     padding: 4px;
-    border-radius: var(--borderRadius);
+    border-radius: 8px;
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 7px );
     -webkit-backdrop-filter: blur( 7px );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    z-index: 998;
+    z-index: 1000;
 }
 
 .nav-list-mobile a {
@@ -228,6 +240,21 @@ header div h3, header div p {
 @media screen and (min-width: 568px) and (max-width: 1024px) {
     .navbar-desktop {
         display: none;
+    }
+
+    .navbar-mobile img {
+        top: 3%;
+        left: 3%;
+        width: 7vw;
+    }
+
+    .nav-list-mobile {
+        height: 70vh;
+        width: 86vw;
+    }
+
+    .nav-list-mobile a {
+        font-size: 1.6em;
     }
 }
 

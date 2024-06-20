@@ -44,7 +44,7 @@ require './src/arrays.php';
     </ul>
   </nav>
   <nav class="navbar-mobile">
-    <img src="./assets/icones/menu-burger.png" alt="icone d'un menu burger">
+    <img src="./assets/icones/menu-burger.png" alt="icone d'un menu burger" class="burger">
     <ul class="nav-list-mobile">
       <li class="active"><a href="#">Accueil</a></li>
       <li><a href="./templates/sunday.php">Vélorution</a></li>

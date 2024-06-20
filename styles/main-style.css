@@ -189,6 +189,40 @@ header div h3, header div p {
     display: none;
 }
 
+.nav-list-mobile {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 90%;
+    background-color: var(--activeColorClass);
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: -150vw;
+    z-index: 999;
+}
+
+.navbar-mobile img {
+    width: 10vw;
+    position: fixed;
+    top: 1%;
+    left: 2%;
+    padding: 4px;
+    border-radius: var(--borderRadius);
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    z-index: 998;
+}
+
+.nav-list-mobile a {
+    color: var(--backgroundText);
+    font-size: 1.4em;
+}
+
 /* ==== MEDIA QUERIES NAV BAR TABLET ==== */
 
 @media screen and (min-width: 568px) and (max-width: 1024px) {
@@ -205,6 +239,7 @@ header div h3, header div p {
     .navbar-mobile {
         display: none;
     }
+
     .navbar-desktop {
         display: block;
         background-color: var(--titleColor);

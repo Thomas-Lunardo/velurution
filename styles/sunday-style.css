@@ -5,7 +5,7 @@
     --titleColor: rgba(242, 111, 82, 1);
     --activeColorClass: rgb(141, 111, 177);
     --main-font:'Nunito Sans', sans-serif;
-    --fontSizeP: 0.9em;
+    --fontSizeP: 1.1em;
     --boxShadow: 0px 4px 4px 0px rgba(69,69,69,0.59);
     --backgroundText: rgba(249, 246, 246, 1);
     --lineHeightP: 1.3em;
@@ -276,9 +276,11 @@ main section {
     flex-direction: column;
 }
 
-main section p {
+main section p, main section b {
+    margin: 10px auto;
     line-height: var(--lineHeightP);
     letter-spacing: var(--letterSpacingP);
+    font-size: var(--fontSizeP);
 }
 
 /* LINKS MOBILE*/

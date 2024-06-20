@@ -20,9 +20,9 @@ require '../src/arrays.php';
     </header>
     <nav class="navbar-desktop">
         <ul>
-            <li class="active"><a href="../index.php">Accueil</a></li>
-            <li><a href="#">Vélorution</a></li>
-            <li><a href="../advocacy.php">Plaidoyer</a></li>
+            <li><a href="../index.php">Accueil</a></li>
+            <li class="active"><a href="#">Vélorution</a></li>
+            <li><a href="./advocacy.php">Plaidoyer</a></li>
         </ul>
     </nav>
     <nav class="navbar-mobile">

@@ -11,6 +11,11 @@ require './src/arrays.php';
   <title>Quartiers libres #2</title>
   <link rel="stylesheet" href="./styles/main-style.css" />
   <link rel="icon" type="image/png" href="./assets/images/étoile_1.png" />
+  <meta name="author" content="Thomas Lunardo">
+  <meta name="description" content="Quartiers Libres encourage l'utilisation du vélo en ville par les enfants et rassemble les associations pour plaider en faveur d'aménagements urbains adaptés.">
+  <meta property="og:image" content="https://quartierslibres.org/assets/images/flyer_v%C3%A9lorution.jpg">
+  <meta property="og:title" content="Quartiers Libres - Seconde édition | Vélorution">
+  <meta property="og:description" content="Quartiers Libres encourage l'utilisation du vélo en ville par les enfants et rassemble les associations pour plaider en faveur d'aménagements urbains adaptés.">
 </head>
 
 <body>
@@ -41,7 +46,7 @@ require './src/arrays.php';
       <li class="active"><a href="#">Accueil</a></li>
       <li><a href="./templates/sunday.php">Vélorution</a></li>
       <li><a href="./templates/advocacy.php">Plaidoyer</a></li>
-      <li><a href="https://clavette-lyon.heureux-cyclage.org/index.php/2024/01/24/samedi-22-juin-2024-fete-des-ateliers-velo-participatifs/"  target="_blank">Fête des ateliers vélo</a>
+      <li><a href="https://clavette-lyon.heureux-cyclage.org/index.php/2024/01/24/samedi-22-juin-2024-fete-des-ateliers-velo-participatifs/" target="_blank">Fête des ateliers vélo</a>
     </ul>
   </nav>
   <nav class="navbar-mobile">

@@ -306,6 +306,7 @@ header div h3, header div p {
         align-items: center;
         justify-content: space-evenly;
         height: 5vh;
+        transition: all 0.25s ease-in-out;
     }
 
     .navbar-desktop.scroll ul {
@@ -319,8 +320,7 @@ header div h3, header div p {
         justify-content: center;
         align-items: center;
         padding: 0 30px;
-        transition: background-color 2s;
-        transition: transform 2s;
+        transition: all 0.25s ease-in-out;
     }
 
     .navbar-desktop.scroll ul li {
@@ -333,9 +333,14 @@ header div h3, header div p {
         border-radius: var(--borderRadius);
     }
 
+    .navbar-desktop.scroll ul li:hover {
+        transform: scale(1);
+    }
+
     .navbar-desktop ul li a {
         color: var(--backgroundText);
         font-size: 1.3em;
+        transition: all 0.25s ease-in-out;
     }
 
     .navbar-desktop.scroll ul li a {

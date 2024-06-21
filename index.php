@@ -11,6 +11,11 @@ require './src/arrays.php';
   <title>Quartiers libres #2</title>
   <link rel="stylesheet" href="./styles/main-style.css" />
   <link rel="icon" type="image/png" href="./assets/images/étoile_1.png" />
+  <meta name="author" content="Thomas Lunardo">
+  <meta name="description" content="Quartiers Libres promeut le vélo en ville pour les enfants, les événements liés et les initiatives des associations organisatrices.">
+  <meta property="og:image" content="https://quartierslibres.org/assets/images/flyer_v%C3%A9lorution.jpg">
+  <meta property="og:title" content="Quartiers Libres - Seconde édition | Vélorution">
+  <meta property="og:description" content="Quartiers Libres promeut le vélo en ville pour les enfants, les événements liés et les initiatives des associations organisatrices.">
 </head>
 
 <body>

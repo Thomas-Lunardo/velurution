@@ -267,7 +267,7 @@ main {
     width: 93vw;
 }
 
-main section p, main section b {
+main p{
     margin: 10px auto;
     text-align: start;
     line-height: var(--lineHeightP);

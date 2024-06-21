@@ -1,3 +1,5 @@
+// ===== buger menu for mobile display ======== //
+
 const icon = document.querySelector(".burger");
 const list = document.querySelector(".nav-list-mobile");
 
@@ -15,3 +17,19 @@ document.addEventListener("click", function (event){
         icon.classList.remove("icon-rotation");
 	};
 });
+
+// ========================================== //
+
+// ======== navbar desktop scroll =========== //
+
+const nav = document.querySelector(".navbar-desktop");
+
+window.addEventListener('scroll', () => {
+	if (window.scrollY > 348) {
+		nav.classList.add('scroll');
+	} else {
+		nav.classList.remove('scroll');
+	}
+});
+
+// ========================================== //

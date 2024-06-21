@@ -49,7 +49,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 20vh;
+    height: 23vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,9 +73,10 @@ header img {
 header h1 {
     color: var(--titleColor);
     font-size: 2.3em;
-    font-weight: 100;
+    font-weight: 600;
     margin: auto 2vw;
     text-align: center;
+    letter-spacing: var(--letterSpacingP);
 }
 
 /* ======== MEDIA QUERIES HEADER TABLET ========= */
@@ -222,15 +223,30 @@ header h1 {
         display: block;
         background-color: var(--titleColor);
         box-shadow: var(--boxShadow);
+        height: 5vh;
         width: 100vw;
+        transition: all 0.25s ease-in-out;
+    }
+
+    .navbar-desktop.scroll {
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        opacity: 95%;
+        height: 4vh;
     }
 
     .navbar-desktop ul {
         color: var(--titleColor);
-        height: 5vh;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        height: 5vh;
+        transition: all 0.25s ease-in-out;
+    }
+
+    .navbar-desktop.scroll ul {
+        height: 4vh;
     }
 
     .navbar-desktop ul li {
@@ -240,8 +256,11 @@ header h1 {
         justify-content: center;
         align-items: center;
         padding: 0 30px;
-        transition: background-color 2s;
-        transition: transform 2s;
+        transition: all 0.25s ease-in-out;
+    }
+
+    .navbar-desktop.scroll ul li {
+        height: 4vh;
     }
 
     .navbar-desktop ul li:hover {
@@ -250,9 +269,18 @@ header h1 {
         border-radius: var(--borderRadius);
     }
 
+    .navbar-desktop.scroll ul li:hover {
+        transform: scale(1);
+    }
+
     .navbar-desktop ul li a {
         color: var(--backgroundText);
         font-size: 1.3em;
+        transition: all 0.25s ease-in-out;
+    }
+
+    .navbar-desktop.scroll ul li a {
+        font-size: 1.1em;
     }
 
     .active {
@@ -358,7 +386,7 @@ main section:nth-of-type(1) div:nth-of-type(2) {
     margin: 12px 12px 24px;
     line-height: var(--lineHeightP);
     letter-spacing: var(--letterSpacingP);
-    font-size: 0.9em;
+    font-size: var(--fontSizeP);
 }
 
 main section:nth-of-type(1) div:nth-of-type(2) p:first-of-type {

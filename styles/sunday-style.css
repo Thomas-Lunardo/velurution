@@ -49,7 +49,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 20vh;
+    height: 23vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,9 +73,10 @@ header img {
 header h1 {
     color: var(--titleColor);
     font-size: 2.3em;
-    font-weight: 100;
+    font-weight: 600;
     margin: auto 2vw;
     text-align: center;
+    letter-spacing: var(--letterSpacingP);
 }
 
 /* ======== MEDIA QUERIES HEADER TABLET ========= */

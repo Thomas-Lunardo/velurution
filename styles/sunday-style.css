@@ -73,7 +73,7 @@ header img {
 header h1 {
     color: var(--titleColor);
     font-size: 2.3em;
-    font-weight: 600;
+    font-weight: 500;
     margin: auto 2vw;
     text-align: center;
     letter-spacing: var(--letterSpacingP);

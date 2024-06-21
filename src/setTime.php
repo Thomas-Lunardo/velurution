@@ -4,7 +4,7 @@ date_default_timezone_set('Europe/London');
 
 $date = new DateTime();
 
-$velorutionDepartureTime = (new DateTime)->setDate(2024, 06, 24)->setTime(10, 00, 00);
+$velorutionDepartureTime = (new DateTime)->setDate(2024, 06, 23)->setTime(10, 00, 00);
 
 $timeUntilDeparture = $date->diff($velorutionDepartureTime);
 

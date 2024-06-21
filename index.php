@@ -111,7 +111,7 @@ require './src/arrays.php';
           aussi des espaces dédiés aux pratiques ludiques. Surtout, les
           communes doivent se doter de référents aux mobilités actives des
           enfants pour enfin développer une culture transversale de cet enjeu,
-          entre voirie, éducation, santé…”
+          entre voirie, éducation, santé…”.
         </p>
         <p>
           Enfin, Cyril Vernay de la Maison du Vélo Lyon insiste sur
@@ -119,7 +119,7 @@ require './src/arrays.php';
           certains publics restent éloignés des mobilités actives. Il faut
           développer un continuum éducatif au vélo de la maternelle au
           collège, prendre en compte les accompagnants adultes… et aussi aider
-          les familles précaires à se doter des équipements nécessaires !”
+          les familles précaires à se doter des équipements nécessaires !”.
         </p>
         <img src="./assets/images/flyer_vélorution.jpg" alt="flyer de l'énévement">
         <a href="./assets/images/flyer_vélorution.jpg" download="flyer-vélorution.jpg">Télécharger le Flyer</a>

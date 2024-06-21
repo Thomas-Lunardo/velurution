@@ -74,7 +74,7 @@ header h1 {
     color: var(--titleColor);
     position: absolute;
     font-size: 2.3em;
-    font-weight: 600;
+    font-weight: 500;
     letter-spacing: var(--letterSpacingP);
 }
 

@@ -168,12 +168,11 @@ header h1 {
     font-size: 1.4em;
 }
 
-main section p, main section b {
-    margin: 10px auto;
-    text-align: start;
-    line-height: var(--lineHeightP);
-    letter-spacing: var(--letterSpacingP);
-    font-size: var(--fontSizeP);
+.nav-list-mobile p {
+    color: var(--backgroundText);
+    font-size: 0.9em;
+    text-align: center;
+    margin: 0.5vh auto;
 }
 
 /* ==== MEDIA QUERIES NAV BAR TABLET ==== */
@@ -267,7 +266,9 @@ main {
     width: 93vw;
 }
 
-main p {
+main section p, main section b {
+    margin: 10px auto;
+    text-align: start;
     line-height: var(--lineHeightP);
     letter-spacing: var(--letterSpacingP);
     font-size: var(--fontSizeP);

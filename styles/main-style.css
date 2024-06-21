@@ -287,15 +287,29 @@ header div h3, header div p {
         display: block;
         background-color: var(--titleColor);
         box-shadow: var(--boxShadow);
+        height: 5vh;
         width: 100vw;
+        transition: all 0.25s ease-in-out;
+    }
+
+    .navbar-desktop.scroll {
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        opacity: 95%;
+        height: 4vh;
     }
 
     .navbar-desktop ul {
         color: var(--titleColor);
-        height: 5vh;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        height: 5vh;
+    }
+
+    .navbar-desktop.scroll ul {
+        height: 4vh;
     }
 
     .navbar-desktop ul li {
@@ -309,6 +323,10 @@ header div h3, header div p {
         transition: transform 2s;
     }
 
+    .navbar-desktop.scroll ul li {
+        height: 4vh;
+    }
+
     .navbar-desktop ul li:hover {
         transform: scale(1.1);
         background-color: var(--activeColorClass);
@@ -318,6 +336,10 @@ header div h3, header div p {
     .navbar-desktop ul li a {
         color: var(--backgroundText);
         font-size: 1.3em;
+    }
+
+    .navbar-desktop.scroll ul li a {
+        font-size: 1.1em;
     }
 
     .active {

@@ -276,7 +276,7 @@ main section p, main section b {
 }
 
 main section div {
-    height: 28vh;
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -312,6 +312,7 @@ main section div h4 {
     letter-spacing: var(--letterSpacingP);
     font-size: 1.1em;
     text-align: center;
+    margin-top: 1vh;
 }
 
 /* ======== MEDIA QUERIES MAIN TABLET ========= */
@@ -330,7 +331,7 @@ main section div h4 {
     }
 
     main section div {
-        height: 28vh;
+        height: 40vh;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;

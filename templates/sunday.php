@@ -65,7 +65,7 @@ require '../src/arrays.php';
                     <?php foreach ($timeInformation as $key => $time) { ?>
                         <div class="countdown-unity">
                             <p><?php echo strtoupper($key); ?></p>
-                            <p><?php echo $time; ?></p>
+                            <p>0</p>
                         </div>
                     <?php } ?>
                 </div>
